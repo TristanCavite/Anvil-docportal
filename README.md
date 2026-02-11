@@ -1,41 +1,33 @@
 <div>
     <table width="100%">
-        <h1>Bonito Flakes</h1>
+        <h1>Nine Tails</h1>
         <p style="font-weight: lighter;">Target: `BF.010.001`</p>
         <tr>
             <td width="40%" valign="top">
                 <h2>Site Map</h2>             
-                <p><strong>1. Authentication & Identity</strong></p>
-                <a href="docs/auth/">Access Portal</a>
+                <p><strong>1. Authentication and Access Control</strong></p>
+                <p style="padding-left: 15px"><strong>Register</strong></p>
                 <ul style="list-style-type: none; padding-left: 0">
-                    <li style="padding-left: 15px"> <a href="docs/auth/google-login.md"> Login with Google (FR 1.0) </a></li>
-                    <li style="padding-left: 15px"> <a href="docs/auth/account-setup.md"> Account Creation </a></li>
+                    <li style="padding-left: 30px"> <a href="docs/auth/google-login.md">Signup (FR 1.0) </a></li>
+                    <li style="padding-left: 30px"> <a href="docs/auth/google-login.md">Signup with Google (FR 1.1) </a></li>
+                    <li style="padding-left: 30px"> <a href="docs/auth/account-setup.md">Signup with Email (FR 1.2)</a></li>
                 </ul>
-                <p><strong>2. Student Viewer Hub</strong></p>
-                <a href="docs/viewer/">Project Transparency</a>
+                <p style="padding-left: 15px"><strong>Login</strong></p>
                 <ul style="list-style-type: none; padding-left: 0">
-                    <li style="padding-left: 15px"> <a href="docs/viewer/dashboard.md"> Real-Time Dashboard (FR 2.0) </a></li>
-                    <li style="padding-left: 15px"> <a href="docs/viewer/milestones.md"> Milestone Tracker (FR 2.1) </a></li>
-                    <li style="padding-left: 15px"> <a href="docs/viewer/updates.md"> Project Updates Hub (FR 3.0) </a></li>
-                    <li style="padding-left: 15px"> <a href="docs/viewer/feedback.md"> Submit Feedback/Comments (FR 4.0) </a></li>
-                    <li style="padding-left: 15px"> <a href="docs/viewer/chatbot.md"> FAQ Chatbot (FR 4.1) </a></li>
+                    <li style="padding-left: 30px"> <a href="docs/auth/google-login.md">Sign In (FR 1.3) </a></li>
+                    <li style="padding-left: 30px"> <a href="docs/auth/account-setup.md">Sign In with Google (FR 1.4)</a></li>
                 </ul>
-                <p><strong>3. Officer Management Portal</strong></p>
-                <a href="docs/officer/">Project Administration</a>
+                <p style="padding-left: 15px"><strong>Forgot Password</strong></p>
                 <ul style="list-style-type: none; padding-left: 0">
-                    <li style="padding-left: 15px"> <a href="docs/officer/manage-projects.md"> Project Manager (FR 6.0) </a></li>
-                    <li style="padding-left: 15px"> <a href="docs/officer/tasks.md"> Task Assignment (FR 6.1) </a></li>
-                    <li style="padding-left: 15px"> <a href="docs/officer/timeline.md"> Timeline Monitor (FR 7.0) </a></li>
-                    <li style="padding-left: 15px"> <a href="docs/officer/budget.md"> Budget Editor & Tracker (FR 8.0/8.1) </a></li>
-                    <li style="padding-left: 15px"> <a href="docs/officer/charts.md"> Progress Visualizer (FR 9.0) </a></li>
+                    <li style="padding-left: 30px"> <a href="docs/auth/google-login.md">Forgot Password (FR1.5) </a></li>
                 </ul>
-                <p><strong>4. Admin & System Control</strong></p>
-                <a href="docs/admin/">System Governance</a>
+                <p><strong>2. Seller Account & Profile Management</strong></p>
+                <p style="padding-left: 15px"><strong>Create/Edit Profile</strong></p>
                 <ul style="list-style-type: none; padding-left: 0">
-                    <li style="padding-left: 15px"> <a href="docs/admin/users.md"> User Role Management (Promote/Demote) </a></li>
-                    <li style="padding-left: 15px"> <a href="docs/admin/logs.md"> System Activity Logs </a></li>
-                    <li style="padding-left: 15px"> <a href="docs/admin/settings.md"> Global Configuration </a></li>
+                    <li style="padding-left: 30px"> <a href="docs/auth/account-setup.md">Create Profile</a></li>
+                    <li style="padding-left: 30px"> <a href="docs/auth/account-setup.md">Edit Profile</a></li>
                 </ul>
+                <p><strong>
             </td>
             <td valign="top">
                 <div>

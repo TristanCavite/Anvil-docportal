@@ -1,9 +1,31 @@
 <div>
     <table width="100%">
-        <h1>Nine Tails</h1>
-        <p style="font-weight: lighter;">Target: `BF.010.001`</p>
+        <h1>Anvil</h1>
+        <p style="font-weight: lighter;">Target: `AV.010.001`</p>
         <tr>
-            <td width="40%" valign="top">
+            <td width="60%"  valign="top">
+                <div>
+                    <table border="1">
+                        <tr>
+                            <th> Revision Date</th>
+                            <th> Document Version</th>
+                            <th> Description</th>
+                            <th> Approved By</th>
+                        </tr>
+                        <tr>
+                            <td> 2026-02-13</td>
+                            <td> v1.0</td>
+                            <td> Updated Site Map to align with FR/UR Mapping and Use Case Diagram</td>
+                            <td> Amadora, Joerick Y <br> Lead Developer </td>
+                        </tr>
+                    </table>
+                </div>
+                <br>
+                <blockquote>
+                    <strong>Note:</strong> This system is for small business reach owner and online food buyer. The primary goal is to minimize food waste by providing a platform to sell it.
+                </blockquote>
+            </td>
+            <td valign="top">
                 <h2>Site Map</h2>             
                 <p><strong>1. Authentication and Access Control</strong></p>
                 <p style="padding-left: 15px"><strong>Register</strong></p>
@@ -29,33 +51,10 @@
                 </ul>
                 <p><strong>
             </td>
-            <td valign="top">
-                <div>
-                    <table border="1">
-                        <tr>
-                            <th> Revision Date</th>
-                            <th> Document Version</th>
-                            <th> Description</th>
-                            <th> Approved By</th>
-                        </tr>
-                        <tr>
-                            <td> 2026-02-06</td>
-                            <td> v1.1.0</td>
-                            <td> Updated Site Map to align with FR/UR Mapping and Use Case Diagram</td>
-                            <td> Laguna, Marylle B. <br> Project Lead </td>
-                        </tr>
-                    </table>
-                </div>
-                <br>
-                <blockquote>
-                    <strong>Note:</strong> The system is role-based, ensuring clear distinction between General Students and USSC Officers.
-                </blockquote>
-            </td>
         </tr>
         <tr>
             <td colspan="2" align="center">
-                <br>
-                © 2026 Ontrack Development Team
+                <br>© 2026 Restora
             </td>
         </tr>
     </table>

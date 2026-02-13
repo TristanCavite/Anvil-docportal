@@ -78,6 +78,6 @@
     </td>
   </tr>
   <tr>
-    <td colspan="2" align="center">© 2026 Anvil</td>
+    <td colspan="2" align="center">© 2026 Restora</td>
   </tr>
 </table>

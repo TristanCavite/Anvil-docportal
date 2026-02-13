@@ -8,10 +8,8 @@
       <a href="docs/homepage/project-homepage.md">Homepage</a>
       <p style="margin:10px 0 6px;"><strong>1. Authentication &amp; Access Control</strong></p>
       <ul style="margin-top:0;">
-        <li><a href="docs/authentication/authentication-sign-up.md">Sign up (FR0.0)</a></li>
-        <li><a href="docs/authentication/authentication-sign-in.md">Sign in (FR0.0)</a></li>
-        <li><a href="docs/authentication/authentication-forgot-password.md">Forgot Password (FR0.0)</a></li>
-        <li><a href="docs/authentication/authentication-logout.md">Logout (FR0.0)</a></li>
+        <!-- MERGED into one tab/page -->
+        <li><a href="docs/authentication/authentication.md">Authentication (FR0.0)</a></li>
       </ul>
       <p style="margin:10px 0 6px;"><strong>2. User Account &amp; Profile Management</strong></p>
       <ul style="margin-top:0;">

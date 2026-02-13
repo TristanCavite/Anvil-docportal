@@ -1,14 +1,14 @@
 <h2>Anvil</h2>
-<p><strong>Target:</strong> <code>AB.010.001</code></p>
+<p><strong>Target:</strong> <code>AV.010.001</code></p>
 
 <table border="1" cellpadding="0" cellspacing="0" style="width: 90%; font-size: 12px;">
   <tr>
+    <!-- LEFT: SITE MAP -->
     <td valign="top" style="width: 28%; padding: 10px;">
       <h3 style="margin-top:0;">Site Map</h3>
-      <a href="../homepage/homepage.md">Homepage</a>
+      <a href="../homepage/project-homepage.md">Homepage</a>
       <p style="margin:10px 0 6px;"><strong>1. Authentication &amp; Access Control</strong></p>
       <ul style="margin-top:0;">
-        <!-- UPDATED: use the merged authentication.md instead of multiple tabs/files -->
         <li><a href="../authentication/authentication.md">Authentication (FR0.0)</a></li>
       </ul>
       <p style="margin:10px 0 6px;"><strong>2. User Account &amp; Profile Management</strong></p>
@@ -55,23 +55,16 @@
         <li><a href="../audit/view-audit-logs.md">View Activity Logs (FR10.0)</a></li>
       </ul>
     </td>
-    <!-- RIGHT: HOMEPAGE MEDIA + DESCRIPTION + USE CASE -->
     <td valign="top" style="width: 72%; padding: 10px;">
-      <p><strong>Homepage (unauthorized)</strong></p>
-      <img src="../assets/home_unauthorized.png" alt="Homepage Unauthorized" style="max-width:100%; border:1px solid #000;">
-      <p><strong>Homepage (authorized)</strong></p>
-      <img src="../assets/home_authorized.png" alt="Homepage Authorized" style="max-width:100%; border:1px solid #000;">
-      <h2>Homepage</h2>
+      <p><a href="../homepage/project-homepage.md">Homepage</a> &gt; <strong>Authentication</strong></p>
+      <p><strong>Login / Sign up Screen</strong></p>
+      <img src="../assets/authentication.png" alt="Authentication Screen (mockup)" style="max-width:100%; border:1px solid #000;">
+      <h2>Authentication &amp; Access Control (FR0.0)</h2>
       <p>
-        The Homepage is the main landing page where users can immediately see available surplus-food listings in Baybay City.
-        It highlights basic listing details such as item name, price or free tag, pickup location, and time remaining before pickup
-        deadline or expiry. Users who are not logged in can browse and view listing information, but actions that affect the system
-        (such as reserving items, chatting, posting listings, and managing orders) require authentication.
-      </p>
-      <p>
-        Once logged in, the homepage adapts to the user role. Buyers can access reservation and order tracking features. Sellers can
-        access listing management and reservation responses. System administrators can access moderation, reporting, and activity logs.
-        This setup keeps the homepage simple for browsing while ensuring protected actions are only available to authorized users.
+        This feature controls user access to the system by allowing buyers, sellers, and administrators to register, sign in, sign out,
+        and recover accounts through password reset. It ensures that protected actions—such as reserving items, creating listings,
+        responding to reservations, and performing moderation—are only available to verified and logged-in users based on their role.
+        After successful login, the system loads the appropriate interface and permissions for the user type.
       </p>
       <h2>Use Case Scenario</h2>
       <table border="1" cellpadding="6" cellspacing="0" style="width:100%; font-size:12px;">
@@ -81,38 +74,46 @@
         </tr>
         <tr>
           <th>Goal</th>
-          <td>To browse available listings and navigate to the correct features based on login status and role permissions.</td>
+          <td>To securely access the system and enable role-based features after authentication.</td>
         </tr>
         <tr>
           <th>Preconditions</th>
           <td>
-            1. The user has access to the homepage URL.<br>
-            2. The system has available listings to display (active or not yet expired).<br>
-            3. The user may or may not be logged in.
+            1. The user has access to the application URL.<br>
+            2. The user has a registered account (for sign in) or valid details to create an account (for sign up).<br>
+            3. The system authentication service is available.
           </td>
         </tr>
         <tr>
           <th>Main Scenario</th>
           <td>
-            1. The user opens the homepage.<br>
-            2. The system displays active listings with basic details and time remaining before expiry/pickup deadline.<br>
-            3. The user uses search and filters to narrow down listings (category, price range, distance, time left).<br>
-            4. The user selects a listing to view full details.<br>
-            5. If the user attempts a protected action (reserve, chat, create listing, manage orders), the system requires the user to sign in.<br>
-            6. After login, the system loads role-based navigation:
-            <br>&nbsp;&nbsp;&nbsp;&nbsp;a. Buyer: reserve items and track order status.
-            <br>&nbsp;&nbsp;&nbsp;&nbsp;b. Seller: create/manage listings and accept/decline reservations.
-            <br>&nbsp;&nbsp;&nbsp;&nbsp;c. Admin: access moderation, reports, and audit logs.
+            1. The user selects <strong>Sign up</strong> or <strong>Sign in</strong> from the application.<br>
+            2. If signing up, the user provides required information and submits the registration form.<br>
+            3. The system validates inputs and creates an account, then assigns a default role (buyer/seller) based on selection.<br>
+            4. If signing in, the user enters email/username and password, then submits the form.<br>
+            5. The system validates credentials and starts a user session.<br>
+            6. The system redirects the user to the homepage and loads role-based navigation and permissions.<br>
+            7. If the user selects <strong>Logout</strong>, the system ends the session and returns the user to public browsing mode.<br>
+            8. If the user selects <strong>Forgot Password</strong>, the system sends a reset link/instructions and allows the user to set a new password.
+          </td>
+        </tr>
+        <tr>
+          <th>Alternative / Exception Flow</th>
+          <td>
+            A1. Invalid credentials: The system shows an error message and keeps the user on the login page.<br>
+            A2. Duplicate account: The system informs the user that the email is already registered.<br>
+            A3. Reset link expired/invalid: The system prompts the user to request a new password reset link.
           </td>
         </tr>
         <tr>
           <th>Outcome</th>
-          <td><strong>Success:</strong> The user browses listings and is directed to allowed features based on authentication and role.</td>
+          <td><strong>Success:</strong> The user is authenticated and can access only the features allowed by their role.</td>
         </tr>
       </table>
     </td>
   </tr>
+
   <tr>
-    <td colspan="2" align="center">© 2026 NeighborGoods</td>
+    <td colspan="2" align="center">© 2026 Restora</td>
   </tr>
 </table>

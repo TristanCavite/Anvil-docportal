@@ -3,28 +3,6 @@
         <h1>Anvil</h1>
         <p style="font-weight: lighter;">Target: `AV.010.001`</p>
         <tr>
-            <td width="60%"  valign="top">
-                <div>
-                    <table border="1">
-                        <tr>
-                            <th> Revision Date</th>
-                            <th> Document Version</th>
-                            <th> Description</th>
-                            <th> Approved By</th>
-                        </tr>
-                        <tr>
-                            <td> 2026-02-13</td>
-                            <td> v1.0</td>
-                            <td> Updated Site Map to align with FR/UR Mapping and Use Case Diagram</td>
-                            <td> Amadora, Joerick Y <br> Lead Developer </td>
-                        </tr>
-                    </table>
-                </div>
-                <br>
-                <blockquote>
-                    <strong>Note:</strong> This system is for small business reach owner and online food buyer. The primary goal is to minimize food waste by providing a platform to sell it.
-                </blockquote>
-            </td>
             <td valign="top">
                 <h2>Site Map</h2>             
                 <p><strong>1. Authentication and Access Control</strong></p>
@@ -50,6 +28,28 @@
                     <li style="padding-left: 30px"> <a href="docs/auth/account-setup.md">Edit Profile</a></li>
                 </ul>
                 <p><strong>
+            </td>
+            <td width="80%"  valign="top">
+                <div>
+                    <table border="1">
+                        <tr>
+                            <th> Revision Date</th>
+                            <th> Document Version</th>
+                            <th> Description</th>
+                            <th> Approved By</th>
+                        </tr>
+                        <tr>
+                            <td> 2026-02-13</td>
+                            <td> v1.0</td>
+                            <td> Updated Site Map to align with FR/UR Mapping and Use Case Diagram</td>
+                            <td> Cavite, Tristan Aaron <br> Project Manager </td>
+                        </tr>
+                    </table>
+                </div>
+                <br>
+                <blockquote>
+                    <strong>Note:</strong> This system is for small business reach owner and online food buyer. The primary goal is to minimize food waste by providing a platform to sell it.
+                </blockquote>
             </td>
         </tr>
         <tr>

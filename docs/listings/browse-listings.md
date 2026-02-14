@@ -65,7 +65,7 @@
     </td>
     <!-- Right SideBar - Content -->
     <td valign="top" style="width: 72%; padding: 10px;">
-      <h3 style="margin-top:0;">Review Listing</h3>
+      <h3 style="margin-top:0;">Browse Listing</h3>
       <br>
     </td>
   </tr>

@@ -1,20 +1,20 @@
 <h2>Anvil</h2>
-<p><strong>Target:</strong> <code>AB.010.001</code></p>
+<p><strong>Target:</strong> <code>AV.010.001</code></p>
 
 <table border="1" cellpadding="0" cellspacing="0" style="width: 90%; font-size: 12px;">
   <tr>
-    <!-- LEFT: SITE MAP -->
+    <!-- LEFT: SITE MAP (FROM docs/profile/) -->
     <td valign="top" style="width: 28%; padding: 10px;">
       <h3 style="margin-top:0;">Site Map</h3>
-      <a href="../homepage/homepage.md">Homepage</a>
+      <a href="../homepage/project-homepage.md">Homepage</a>
       <p style="margin:10px 0 6px;"><strong>1. Authentication &amp; Access Control</strong></p>
       <ul style="margin-top:0;">
         <li><a href="../authentication/authentication.md">Authentication (FR0.0)</a></li>
       </ul>
       <p style="margin:10px 0 6px;"><strong>2. User Account &amp; Profile Management</strong></p>
       <ul style="margin-top:0;">
-        <li><a href="../profile/view-profile.md">View Profile (FR1.0)</a></li>
-        <li><a href="../profile/edit-profile.md"><strong>Edit Profile (FR1.0)</strong></a></li>
+        <li><a href="view-profile.md">View Profile (FR1.0)</a></li>
+        <li><a href="edit-profile.md"><strong>Edit Profile (FR1.0)</strong></a></li>
       </ul>
       <p style="margin:10px 0 6px;"><strong>3. Listings</strong></p>
       <ul style="margin-top:0;">
@@ -24,6 +24,7 @@
         <li><a href="../listings/create-listing.md">Create Listing (FR2.0)</a></li>
         <li><a href="../listings/edit-listing.md">Edit Listing (FR2.0)</a></li>
         <li><a href="../listings/archive-listing.md">Archive Listing (FR2.0)</a></li>
+        <li><a href="../listings/auto-soldout-expiry.md">Auto Sold-out &amp; Expiry Handling (FR3.0)</a></li>
       </ul>
       <p style="margin:10px 0 6px;"><strong>4. Orders / Reservations</strong></p>
       <ul style="margin-top:0;">
@@ -57,20 +58,16 @@
     </td>
     <!-- RIGHT: MEDIA + DESCRIPTION + USE CASE -->
     <td valign="top" style="width: 72%; padding: 10px;">
+      <p><a href="../homepage/project-homepage.md">Homepage</a> &gt; <a href="view-profile.md">View Profile</a> &gt; <strong>Edit Profile</strong></p>
       <p><strong>Edit Profile (Buyer)</strong></p>
-      <img src="../assets/edit_profile_buyer.png" alt="Edit Profile Buyer" style="max-width:100%; border:1px solid #000;">
+      <img src="../assets/edit_profile_buyer.png" alt="Edit Profile - Buyer (mockup)" style="max-width:100%; border:1px solid #000;">
       <p><strong>Edit Profile (Seller)</strong></p>
-      <img src="../assets/edit_profile_seller.png" alt="Edit Profile Seller" style="max-width:100%; border:1px solid #000;">
-      <h2>Edit Profile</h2>
+      <img src="../assets/edit_profile_seller.png" alt="Edit Profile - Seller (mockup)" style="max-width:100%; border:1px solid #000;">
+      <h2>Edit Profile (FR1.0)</h2>
       <p>
-        The Edit Profile feature allows logged-in users to update their personal information such as name, contact details,
-        and location. Keeping this information updated supports smoother communication and pickup coordination, especially when
-        buyers and sellers need to confirm meetup details.
-      </p>
-      <p>
-        Buyers can update profile fields used for reservation and pickup coordination. Sellers can update the same basic fields
-        and maintain seller-specific details that help identify their listings and ensure consistent information when responding
-        to buyer reservations.
+        The Edit Profile feature allows logged-in users to update profile information such as name, contact details, and location.
+        This supports smoother coordination during reservations and pickup/delivery arrangements. For sellers, it also supports
+        maintaining seller-specific details so buyers can reliably identify who posted the listing and how to contact them.
       </p>
       <h2>Use Case Scenario</h2>
       <table border="1" cellpadding="6" cellspacing="0" style="width:100%; font-size:12px;">
@@ -80,7 +77,7 @@
         </tr>
         <tr>
           <th>Goal</th>
-          <td>To update profile information so account details remain accurate for listing and pickup coordination.</td>
+          <td>To update profile information so account details remain accurate for communication and pickup coordination.</td>
         </tr>
         <tr>
           <th>Preconditions</th>
@@ -93,17 +90,25 @@
           <th>Main Scenario</th>
           <td>
             1. The user opens the navigation menu and selects <strong>Profile</strong>.<br>
-            2. The user selects <strong>Edit Profile</strong>.<br>
-            3. The system displays editable fields (name, contact details, location).<br>
-            4. The user updates one or more fields.<br>
-            5. The user clicks <strong>Save</strong>.<br>
-            6. The system validates the input and updates the profile record.<br>
-            7. The system shows a confirmation message and displays the updated profile information.
+            2. The system displays the user profile page.<br>
+            3. The user clicks <strong>Edit Profile</strong>.<br>
+            4. The system displays editable fields (name, contact, location, and seller-specific fields if the user is a seller).<br>
+            5. The user updates one or more fields.<br>
+            6. The user clicks <strong>Save</strong>.<br>
+            7. The system validates the input and updates the profile record.<br>
+            8. The system displays a confirmation message and shows the updated profile information.
+          </td>
+        </tr>
+        <tr>
+          <th>Alternative / Exception Flow</th>
+          <td>
+            A1. Invalid input (e.g., empty required field): The system highlights the field and blocks saving until corrected.<br>
+            A2. Save failed (network/server issue): The system shows an error message and keeps the user on the edit page to retry.
           </td>
         </tr>
         <tr>
           <th>Outcome</th>
-          <td><strong>Success:</strong> The user’s profile is updated and saved, and the new details are reflected in the account.</td>
+          <td><strong>Success:</strong> The user’s profile is saved and the updated details are reflected across the account.</td>
         </tr>
       </table>
     </td>

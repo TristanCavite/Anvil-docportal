@@ -1,20 +1,20 @@
 <h2>Anvil</h2>
-<p><strong>Target:</strong> <code>AB.010.001</code></p>
+<p><strong>Target:</strong> <code>AV.010.001</code></p>
 
 <table border="1" cellpadding="0" cellspacing="0" style="width: 90%; font-size: 12px;">
   <tr>
-    <!-- LEFT: SITE MAP (same format as homepage) -->
+    <!-- LEFT: SITE MAP (FROM docs/profile/) -->
     <td valign="top" style="width: 28%; padding: 10px;">
       <h3 style="margin-top:0;">Site Map</h3>
-      <a href="../homepage/homepage.md">Homepage</a>
+      <a href="../homepage/project-homepage.md">Homepage</a>
       <p style="margin:10px 0 6px;"><strong>1. Authentication &amp; Access Control</strong></p>
       <ul style="margin-top:0;">
         <li><a href="../authentication/authentication.md">Authentication (FR0.0)</a></li>
       </ul>
       <p style="margin:10px 0 6px;"><strong>2. User Account &amp; Profile Management</strong></p>
       <ul style="margin-top:0;">
-        <li><a href="../profile/view-profile.md"><strong>View Profile (FR1.0)</strong></a></li>
-        <li><a href="../profile/edit-profile.md">Edit Profile (FR1.0)</a></li>
+        <li><a href="view-profile.md"><strong>View Profile (FR1.0)</strong></a></li>
+        <li><a href="edit-profile.md">Edit Profile (FR1.0)</a></li>
       </ul>
       <p style="margin:10px 0 6px;"><strong>3. Listings</strong></p>
       <ul style="margin-top:0;">
@@ -24,6 +24,7 @@
         <li><a href="../listings/create-listing.md">Create Listing (FR2.0)</a></li>
         <li><a href="../listings/edit-listing.md">Edit Listing (FR2.0)</a></li>
         <li><a href="../listings/archive-listing.md">Archive Listing (FR2.0)</a></li>
+        <li><a href="../listings/auto-soldout-expiry.md">Auto Sold-out &amp; Expiry Handling (FR3.0)</a></li>
       </ul>
       <p style="margin:10px 0 6px;"><strong>4. Orders / Reservations</strong></p>
       <ul style="margin-top:0;">
@@ -55,21 +56,22 @@
         <li><a href="../audit/view-audit-logs.md">View Activity Logs (FR10.0)</a></li>
       </ul>
     </td>
-    <!-- RIGHT: MEDIA + DESCRIPTION + USE CASE (same style as homepage) -->
+    <!-- RIGHT: MEDIA + DESCRIPTION + USE CASE -->
     <td valign="top" style="width: 72%; padding: 10px;">
+      <p><a href="../homepage/project-homepage.md">Homepage</a> &gt; <strong>View Profile</strong></p>
       <p><strong>View Profile (Buyer)</strong></p>
-      <img src="../assets/view_profile_buyer.png" alt="View Profile Buyer" style="max-width:100%; border:1px solid #000;">
+      <img src="../assets/view_profile_buyer.png" alt="View Profile - Buyer (mockup)" style="max-width:100%; border:1px solid #000;">
       <p><strong>View Profile (Seller)</strong></p>
-      <img src="../assets/view_profile_seller.png" alt="View Profile Seller" style="max-width:100%; border:1px solid #000;">
-      <h2>View Profile</h2>
+      <img src="../assets/view_profile_seller.png" alt="View Profile - Seller (mockup)" style="max-width:100%; border:1px solid #000;">
+      <h2>View Profile (FR1.0)</h2>
       <p>
-        The View Profile feature allows logged-in users to view their account and profile information, including their name,
-        contact details, and location. This helps users confirm that their information is correct before coordinating any
-        reservation or pickup.
+        The View Profile feature allows logged-in users to review their saved profile details such as name, contact information,
+        and location. This helps ensure the account information is accurate before using key platform actions like reservations,
+        pickup coordination, listing management, and order communication.
       </p>
       <p>
-        For buyers, the profile shows basic details that support communication and pickup coordination. For sellers, the profile
-        also includes seller-specific details that support listing management and seller identification within the platform.
+        Buyers mainly use the profile for communication and pickup verification. Sellers use the profile to confirm the same details
+        and review seller-related information that helps identify them across listings and reservations.
       </p>
       <h2>Use Case Scenario</h2>
       <table border="1" cellpadding="6" cellspacing="0" style="width:100%; font-size:12px;">
@@ -79,23 +81,29 @@
         </tr>
         <tr>
           <th>Goal</th>
-          <td>To view saved profile information for coordination and verification purposes.</td>
+          <td>To view saved profile information for verification and coordination purposes.</td>
         </tr>
         <tr>
           <th>Preconditions</th>
           <td>
             1. The user is logged in.<br>
-            2. The user has an existing profile record in the system.
+            2. The user has an existing profile record stored in the system.
           </td>
         </tr>
         <tr>
           <th>Main Scenario</th>
           <td>
             1. The user opens the navigation menu and selects <strong>Profile</strong>.<br>
-            2. The user selects <strong>View Profile</strong>.<br>
-            3. The system displays the user’s profile information (name, contact details, and location).<br>
-            4. If the user is a seller, the system also displays seller-specific details.<br>
-            5. The user reviews the information and proceeds back to other features or chooses to edit their profile if needed.
+            2. The system displays the user’s profile information (name, contact details, and location).<br>
+            3. If the user is a seller, the system also displays seller-specific details.<br>
+            4. The user reviews the information.<br>
+            5. If changes are needed, the user selects <strong>Edit Profile</strong> to update details; otherwise, the user exits the page.
+          </td>
+        </tr>
+        <tr>
+          <th>Alternative / Exception Flow</th>
+          <td>
+            A1. Profile record missing/incomplete: The system prompts the user to complete required profile fields before using protected actions.
           </td>
         </tr>
         <tr>

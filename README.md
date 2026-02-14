@@ -21,12 +21,16 @@
       <!-- Listings -->
       <p style="margin:10px 0 6px;"><strong>3. Listings</strong></p>
       <ul style="margin-top:0;">
+        <!-- FR4.0 -->
         <li><a href="docs/listings/browse-listings.md">Browse Listings (FR4.0)</a></li>
         <li><a href="docs/listings/search-filter.md">Search &amp; Filters (FR4.0)</a></li>
         <li><a href="docs/listings/view-listing-details.md">View Listing Details (FR4.0)</a></li>
+        <!-- FR2.0 -->
         <li><a href="docs/listings/create-listing.md">Create Listing (FR2.0)</a></li>
         <li><a href="docs/listings/edit-listing.md">Edit Listing (FR2.0)</a></li>
         <li><a href="docs/listings/archive-listing.md">Archive Listing (FR2.0)</a></li>
+        <!-- FR3.0 (ADDED) -->
+        <li><a href="docs/listings/auto-soldout-expiry.md">Auto Sold-out &amp; Expiry Handling (FR3.0)</a></li>
       </ul>
       <!-- Orders / Reservation -->
       <p style="margin:10px 0 6px;"><strong>4. Orders / Reservations</strong></p>
@@ -83,6 +87,7 @@
       <br>
     </td>
   </tr>
+
   <tr>
     <td colspan="2" align="center">© 2026 Restora</td>
   </tr>

@@ -55,7 +55,7 @@
       <!-- Reports & Enforcement -->
       <p style="margin:10px 0 6px;"><strong>7. Reports &amp; Enforcement</strong></p>
       <ul style="margin-top:0;">
-        <li><a href="docs/reports/report-listing-user.md">Report Listing/User (FR8.0)</a></li>
+        <li><a href="docs/reports/reports-listing-user.md">Report Listing/User (FR8.0)</a></li>
         <li><a href="docs/reports/review-reports.md">Review Reports (FR8.0)</a></li>
         <li><a href="docs/reports/apply-sanctions.md">Warn/Suspend/Ban (FR8.0)</a></li>
       </ul>

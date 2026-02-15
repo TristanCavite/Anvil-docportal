@@ -68,9 +68,9 @@
     <!-- Right Sidebar - Event and Scenario-->
     <td valign="top" style="width: 72%; padding: 10px;">
       <p><strong>Homepage (unauthorized)</strong></p>
-      <img src="../assets/home_unauthorized.png" alt="Homepage Unauthorized" style="max-width:100%; border:1px solid #000;">
+      <img src="/assets/Unauthorized.png" alt="Homepage Unauthorized" style="max-width:100%; border:1px solid #000;">
       <p><strong>Homepage (authorized)</strong></p>
-      <img src="../assets/home_authorized.png" alt="Homepage Authorized" style="max-width:100%; border:1px solid #000;">
+      <img src="/assets/Authorized.png" alt="Homepage Authorized" style="max-width:100%; border:1px solid #000;">
       <h2>Homepage</h2>
       <p>
         The Homepage is the main landing page where users can immediately see available surplus-food listings in Baybay City.

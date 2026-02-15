@@ -58,11 +58,11 @@
     </td>
     <!-- RIGHT: MEDIA + DESCRIPTION + USE CASE -->
     <td valign="top" style="width: 72%; padding: 10px;">
-      <p><a href="../homepage/project-homepage.md">Homepage</a> &gt; <a href="view-profile.md">View Profile</a> &gt; <strong>Edit Profile</strong></p>
+      <p><a href="/assets/Authorized.png">Homepage</a> &gt; <a href="view-profile.md">View Profile</a> &gt; <strong>Edit Profile</strong></p>
       <p><strong>Edit Profile (Buyer)</strong></p>
-      <img src="../assets/edit_profile_buyer.png" alt="Edit Profile - Buyer (mockup)" style="max-width:100%; border:1px solid #000;">
+      <img src="/assets/BuyerProfileEdit.png" alt="Edit Profile - Buyer (mockup)" style="max-width:100%; border:1px solid #000;">
       <p><strong>Edit Profile (Seller)</strong></p>
-      <img src="../assets/edit_profile_seller.png" alt="Edit Profile - Seller (mockup)" style="max-width:100%; border:1px solid #000;">
+      <img src="/assets/SellerProfileEdit.png" alt="Edit Profile - Seller (mockup)" style="max-width:100%; border:1px solid #000;">
       <h2>Edit Profile (FR1.0)</h2>
       <p>
         The Edit Profile feature allows logged-in users to update profile information such as name, contact details, and location.

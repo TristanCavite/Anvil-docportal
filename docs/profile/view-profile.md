@@ -58,11 +58,11 @@
     </td>
     <!-- RIGHT: MEDIA + DESCRIPTION + USE CASE -->
     <td valign="top" style="width: 72%; padding: 10px;">
-      <p><a href="../homepage/project-homepage.md">Homepage</a> &gt; <strong>View Profile</strong></p>
+      <p><a href="/assets/Authorized.png">Homepage</a> &gt; <strong>View Profile</strong></p>
       <p><strong>View Profile (Buyer)</strong></p>
-      <img src="../assets/view_profile_buyer.png" alt="View Profile - Buyer (mockup)" style="max-width:100%; border:1px solid #000;">
+      <img src="/assets/BuyerProfileView.png" alt="View Profile - Buyer (mockup)" style="max-width:100%; border:1px solid #000;">
       <p><strong>View Profile (Seller)</strong></p>
-      <img src="../assets/view_profile_seller.png" alt="View Profile - Seller (mockup)" style="max-width:100%; border:1px solid #000;">
+      <img src="/assets/SellerProfileView.png" alt="View Profile - Seller (mockup)" style="max-width:100%; border:1px solid #000;">
       <h2>View Profile (FR1.0)</h2>
       <p>
         The View Profile feature allows logged-in users to review their saved profile details such as name, contact information,

@@ -13,7 +13,7 @@
       </ul>
       <p style="margin:10px 0 6px;"><strong>2. User Account &amp; Profile Management</strong></p>
       <ul style="margin-top:0;">
-        <li><a href="view-profile.md"><strong>View Profile (FR1.0)</strong></a></li>
+        <li><strong>View Profile (FR1.0)</strong></li>
         <li><a href="edit-profile.md">Edit Profile (FR1.0)</a></li>
       </ul>
       <p style="margin:10px 0 6px;"><strong>3. Listings</strong></p>
@@ -45,7 +45,7 @@
       </ul>
       <p style="margin:10px 0 6px;"><strong>7. Reports &amp; Enforcement</strong></p>
       <ul style="margin-top:0;">
-        <li><a href="../reports/report-listing-user.md">Report Listing/User (FR8.0)</a></li>
+        <li><a href="../reports/reports-listing-user.md">Report Listing/User (FR8.0)</a></li>
         <li><a href="../reports/review-reports.md">Review Reports (FR8.0)</a></li>
         <li><a href="../reports/apply-sanctions.md">Warn/Suspend/Ban (FR8.0)</a></li>
       </ul>
@@ -60,9 +60,9 @@
     <td valign="top" style="width: 72%; padding: 10px;">
       <p><a href="/assets/Authorized.png">Homepage</a> &gt; <strong>View Profile</strong></p>
       <p><strong>View Profile (Buyer)</strong></p>
-      <img src="/assets/BuyerProfileView.png" alt="View Profile - Buyer (mockup)" style="max-width:100%; border:1px solid #000;">
+      <img src="../../assets/img/buyer-profile-view.png" alt="View Profile - Buyer (mockup)" style="max-width:100%; border:1px solid #000;">
       <p><strong>View Profile (Seller)</strong></p>
-      <img src="/assets/SellerProfileView.png" alt="View Profile - Seller (mockup)" style="max-width:100%; border:1px solid #000;">
+      <img src="../../assets/img/seller-profile-view.png" alt="View Profile - Seller (mockup)" style="max-width:100%; border:1px solid #000;">
       <h2>View Profile (FR1.0)</h2>
       <p>
         The View Profile feature allows logged-in users to review their saved profile details such as name, contact information,

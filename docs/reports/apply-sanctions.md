@@ -53,7 +53,7 @@
       <ul style="margin-top:0;">
         <li><a href="reports-listing-user.md">Report Listing/User (FR8.0)</a></li>
         <li><a href="review-reports.md">Review Reports (FR8.0)</a></li>
-        <li><a href="apply-sanctions.md">Warn/Suspend/Ban (FR8.0)</a></li>
+        <li><strong>Warn/Suspend/Ban (FR8.0)<strong></li>
       </ul>
       <!--Verification, Moderation, and Audit -->
       <p style="margin:10px 0 6px;"><strong>8. Verification, Moderation &amp; Audit</strong></p>
@@ -66,7 +66,7 @@
     <!-- Right SideBar - Content -->
     <td valign="top" style="width: 72%; padding: 10px;">
       <p><a href="../homepage/project-homepage.md">Homepage</a> &gt; <strong>Apply Sanctions</strong></p>
-      <img src="" alt="Review Report Page" style="max-width:100%; border:1px solid #000;">
+      <img src="../../assets/img/apply-sanction.png" alt="Review Report Page" style="max-width:100%; border:1px solid #000;">
       <h2>Apply Sanctions (FR8.0)</h2>
       <p>
       The Apply Sanction feature enables administrators to enforce community guidelines by applying appropriate penalties to users who violate platform policies. This functionality allows moderators to take decisive action based on the severity of the violation, ensuring that the platform remains safe and trustworthy for all users. Admins can choose from a range of sanctions, such as content removal, warnings, temporary suspensions, or permanent bans, depending on the nature of the offense. The system logs all actions taken, providing a transparent and auditable trail that ensures accountability and consistency in moderation. By empowering administrators with clear, actionable tools, the Apply Sanction feature helps maintain order, deter future violations, and uphold the integrity of the community.

@@ -56,7 +56,7 @@
       <p style="margin:10px 0 6px;"><strong>7. Reports &amp; Enforcement</strong></p>
       <ul style="margin-top:0;">
         <li><a href="reports-listing-user.md">Report Listing/User (FR8.0)</a></li>
-        <li><a href="review-reports.md">Review Reports (FR8.0)</a></li>
+        <li><strong>Review Reports (FR8.0)</strong></li>
         <li><a href="apply-sanctions.md">Warn/Suspend/Ban (FR8.0)</a></li>
       </ul>
       <!--Verification, Moderation, and Audit -->
@@ -70,7 +70,7 @@
     <!-- Right SideBar - Content -->
     <td valign="top" style="width: 72%; padding: 10px;">
       <p><a href="../homepage/project-homepage.md">Homepage</a> &gt; <strong>Review Reports</strong></p>
-      <img src="" alt="Review Report Page" style="max-width:100%; border:1px solid #000;">
+      <img src="../../assets/img/review-reports.png" alt="Review Report Page" style="max-width:100%; border:1px solid #000;">
        <h2>Review Reports (FR8.0)</h2>
       <p>
       The Review Report feature serves as a comprehensive administrative tool that empowers platform administrators to thoroughly examine, assess, and verify user-submitted reports with precision and efficiency. This critical functionality enables admins to systematically investigate flagged content, user behavior, and potential policy violations, allowing them to make informed decisions that help maintain the platform's integrity and ensure the application runs smoothly without causing unnecessary disruptions or disturbances to the broader user community. 

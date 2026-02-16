@@ -51,7 +51,7 @@
       <!-- Reports & Enforcement -->
       <p style="margin:10px 0 6px;"><strong>7. Reports &amp; Enforcement</strong></p>
       <ul style="margin-top:0;">
-        <li><a href="report-listing-user.md">Report Listing/User (FR8.0)</a></li>
+        <li><strong>Report Listing/User (FR8.0)</strong></li>
         <li><a href="review-reports.md">Review Reports (FR8.0)</a></li>
         <li><a href="apply-sanctions.md">Warn/Suspend/Ban (FR8.0)</a></li>
       </ul>
@@ -65,8 +65,8 @@
     </td>
     <!-- Right SideBar - Content -->
     <td valign="top" style="width: 72%; padding: 10px;">
-      <p><a href="../homepage/project-homepage.md">Homepage</a> &gt; <strong>Review Reports</strong></p>
-      <img src="" alt="Report Listing Page" style="max-width:100%; border:1px solid #000;">
+      <p><a href="../homepage/project-homepage.md">Homepage</a> &gt; <strong>Report Listing</strong></p>
+      <img src="../../assets/img/report-listing-user.png" alt="Report Listing Page" style="max-width:100%; border:1px solid #000;">
       <h2>Reports Listing User (FR8.0)</h2>
       <p>
       The Report Listing Feature enables users to easily file reports about content or behavior that violates community guidelines, ensuring a safe and trustworthy platform for all. Users can access the reporting functionality through a simple interface, where they can select the type of issue (e.g., hate speech, spam, harassment, misinformation), provide a brief description, and submit the report. This feature empowers users to take an active role in maintaining community standards by flagging inappropriate content or behavior, contributing to a more respectful and secure environment. The process is designed to be intuitive and accessible, encouraging users to report issues promptly and confidently.

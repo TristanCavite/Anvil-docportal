@@ -82,53 +82,32 @@
       <img src="/assets/Authorized.png" alt="Homepage Authorized" style="max-width:100%; border:1px solid #000;">
       <h2>Homepage</h2>
       <p>
-        The Homepage is the main landing page where users can immediately see available surplus-food listings in Baybay City.
-        It highlights basic listing details such as item name, price or free tag, pickup location, and time remaining before pickup
-        deadline or expiry. Users who are not logged in can browse and view listing information, but actions that affect the system
-        (such as reserving items, chatting, posting listings, and managing orders) require authentication.
+        The Homepage is the main landing page where users can immediately see available surplus-food listings in Baybay City. It highlights basic listing details such as item name, price or free tag, pickup location, and time remaining before pickup deadline or expiry. Users who are not logged in can browse and view listing information, but protected actions (such as reserving items, chatting, posting listings, and managing orders) require authentication.
       </p>
       <p>
-        Once logged in, the homepage adapts to the user role. Buyers can access reservation and order tracking features. Sellers can
-        access listing management and reservation responses. System administrators can access moderation, reporting, and activity logs.
-        This setup keeps the homepage simple for browsing while ensuring protected actions are only available to authorized users.
+        Once logged in, the homepage adapts to the user role. Buyers can access reservation and order tracking features, sellers can access listing management and reservation responses, and administrators can access moderation, reporting, and activity logs. This keeps browsing simple while ensuring system-changing actions are only available to authorized users.
       </p>
       <h2>Use Case Scenario</h2>
-      <table border="1" cellpadding="6" cellspacing="0" style="width:100%; font-size:12px;">
-        <tr>
-          <th style="width: 22%;">Actor(s)</th>
-          <td>Guest, Buyer, Seller, System Administrator</td>
-        </tr>
-        <tr>
-          <th>Goal</th>
-          <td>To browse available listings and navigate to the correct features based on login status and role permissions.</td>
-        </tr>
-        <tr>
-          <th>Preconditions</th>
-          <td>
-            1. The user has access to the homepage URL.<br>
-            2. The system has available listings to display (active or not yet expired).<br>
-            3. The user may or may not be logged in.
-          </td>
-        </tr>
-        <tr>
-          <th>Main Scenario</th>
-          <td>
-            1. The user opens the homepage.<br>
-            2. The system displays active listings with basic details and time remaining before expiry/pickup deadline.<br>
-            3. The user uses search and filters to narrow down listings (category, price range, distance, time left).<br>
-            4. The user selects a listing to view full details.<br>
-            5. If the user attempts a protected action (reserve, chat, create listing, manage orders), the system requires the user to sign in.<br>
-            6. After login, the system loads role-based navigation:
-            <br>&nbsp;&nbsp;&nbsp;&nbsp;a. Buyer: reserve items and track order status.
-            <br>&nbsp;&nbsp;&nbsp;&nbsp;b. Seller: create/manage listings and accept/decline reservations.
-            <br>&nbsp;&nbsp;&nbsp;&nbsp;c. Admin: access moderation, reports, and audit logs.
-          </td>
-        </tr>
-        <tr>
-          <th>Outcome</th>
-          <td><strong>Success:</strong> The user browses listings and is directed to allowed features based on authentication and role.</td>
-        </tr>
-      </table>
+      <p>
+        <strong>Actor(s):</strong> Guest, Buyer, Seller, Administrator<br>
+        <strong>Goal:</strong> To browse available listings and navigate to the correct features based on login status and role permissions.<br><br>
+        <strong>Preconditions:</strong>
+        <ol>
+          <li>The user has access to the homepage URL</li>
+          <li>The system has available listings to display (active or not yet expired)</li>
+          <li>The user may or may not be logged in</li>
+        </ol>
+        <strong>Main Scenario:</strong><br>
+        <ol>
+          <li>The user opens the homepage</li>
+          <li>The system displays active listings with basic details and time remaining before expiry/pickup deadline</li>
+          <li>The user uses search and filters to narrow down listings (category, price range, distance, time left)</li>
+          <li>The user selects a listing to view full details</li>
+          <li>If the user attempts a protected action (reserve, chat, create listing, manage orders), the system requires the user to sign in</li>
+          <li>After login, the system loads role-based navigation for the user type</li>
+        </ol>
+        <strong>Outcome:</strong> <strong>Success:</strong> The user browses listings and is directed to allowed features based on authentication and role.
+      </p>
     </td>
   </tr>
 

@@ -75,8 +75,38 @@
     </td>
     <!-- Right SideBar - Content -->
     <td valign="top" style="width: 72%; padding: 10px;">
-      <h3 style="margin-top:0;">Review Listing</h3>
-      <br>
+      <p><a href="../homepage/project-homepage.md">Homepage</a> &gt; <strong>Approve/Reject Listings (FR8.0)</strong></p>
+      <h3 style="margin-top:0;">Approve/Reject Listings (FR8.0)</h3>
+      <h2>Approve/Reject Listings (FR8.0)</h2>
+      <p>
+        The Approve/Reject Listings feature allows administrators to review seller-submitted listings before they become publicly visible. The admin checks listing details (content, images, pickup info, and compliance with platform rules) and then approves or rejects the listing with a reason. This helps prevent prohibited content, misinformation, and low-quality or unsafe listings from reaching buyers.
+      </p>
+      <h2>Use Case Scenario</h2>
+      <p>
+        <strong>Actor(s):</strong> Administrator, Seller<br>
+        <strong>Goal:</strong> To moderate submitted listings by approving compliant listings and rejecting listings that violate platform policies before they are shown to buyers.<br><br>
+        <strong>Preconditions:</strong>
+        <ol>
+          <li>The administrator is logged in</li>
+          <li>A seller has submitted a listing for review (pending moderation)</li>
+          <li>The administrator has permission to approve or reject listings</li>
+        </ol>
+        <strong>Main Scenario:</strong><br>
+        <ol>
+          <li>The administrator navigates to the <strong>Review Listings</strong> section from the admin menu</li>
+          <li>The system displays a list of pending listings with basic details and status</li>
+          <li>The administrator selects a listing to review</li>
+          <li>The system displays full listing details (title, description, images, quantity, pickup details, and seller info)</li>
+          <li>The administrator checks the listing against platform guidelines and moderation rules</li>
+          <li>The administrator selects <strong>Approve</strong> or <strong>Reject</strong> and enters a reason if required</li>
+          <li>The system updates the listing status (Approved/Rejected) and records the action in the activity log</li>
+          <li>The system notifies the seller about the moderation decision</li>
+        </ol>
+        <strong>Alternative / Exception Flow:</strong><br>
+        - A1) Listing contains missing/invalid required information: The administrator rejects the listing and requests corrections before resubmission.<br>
+        - A2) Update failed (network/server issue): The system shows an error message and allows the administrator to retry.<br><br>
+        <strong>Outcome:</strong> <strong>Success:</strong> The listing is approved and published for buyers, or rejected and returned to the seller with a reason.
+      </p>
     </td>
   </tr>
   <tr>

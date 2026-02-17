@@ -75,11 +75,39 @@
     </td>
     <!-- RIGHT: KEEP YOUR REVISIONS OR OTHER CONTENT -->
     <td valign="top" style="width: 72%; padding: 10px;">
-      <p><a href="../homepage/project-homepage.md">Homepage</a> &gt; <strong>View  Audit Logs</strong></p>
-      <h3 style="margin-top:0;">View Audit Logs</h3>
+      <p><a href="../homepage/project-homepage.md">Homepage</a> &gt; <strong>View Activity Logs (FR11.0)</strong></p>
+      <h3 style="margin-top:0;">View Activity Logs (FR11.0)</h3>
+      <h2>View Activity Logs (FR11.0)</h2>
+      <p>
+        The View Activity Logs feature allows administrators to review a recorded history of important actions performed in the system. The log may include events such as listing creation/updates, reservation decisions, order status changes, reports handled, sanctions applied, and account verification actions. This supports accountability, investigation of disputes, and monitoring of platform usage and policy enforcement.
+      </p>
+      <h2>Use Case Scenario</h2>
+      <p>
+        <strong>Actor(s):</strong> Administrator<br>
+        <strong>Goal:</strong> To view system activity logs so the administrator can monitor actions, investigate issues, and support auditing and accountability.<br><br>
+        <strong>Preconditions:</strong>
+        <ol>
+          <li>The administrator is logged in</li>
+          <li>The administrator has permission to access activity logs</li>
+          <li>Audit log records exist in the system</li>
+        </ol>
+        <strong>Main Scenario:</strong><br>
+        <ol>
+          <li>The administrator navigates to the <strong>Activity Logs</strong> section from the admin menu</li>
+          <li>The system displays a list of log entries showing details (action type, actor, timestamp, and affected record)</li>
+          <li>The administrator applies filters or search (e.g., date range, action type, user) to narrow results</li>
+          <li>The system refreshes the log list based on the selected filters</li>
+          <li>The administrator selects a log entry to view full details</li>
+          <li>The system displays expanded information (context, related records, and metadata)</li>
+          <li>The administrator continues reviewing other log entries or exits the page</li>
+        </ol>
+        <strong>Alternative / Exception Flow:</strong><br>
+        - A1) No logs match the filters: The system shows a “No results found” message and suggests adjusting filters.<br>
+        - A2) Logs failed to load (network/server issue): The system shows an error message and allows the administrator to retry.<br><br>
+        <strong>Outcome:</strong> <strong>Success:</strong> The administrator successfully views and reviews activity logs for monitoring and auditing purposes.
+      </p>
     </td>
   </tr>
-
   <tr>
     <td colspan="2" align="center">© 2026 Anvil</td>
   </tr>

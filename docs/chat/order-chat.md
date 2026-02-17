@@ -75,9 +75,38 @@
     </td>
     <!-- Right SideBar - Content -->
     <td valign="top" style="width: 72%; padding: 10px;">
-      <p><a href="../homepage/project-homepage.md">Homepage</a> &gt; <strong>order Chat</strong></p>
-      <h3 style="margin-top:0;">Order Chat</h3>
-      <br>
+      <p><a href="../homepage/project-homepage.md">Homepage</a> &gt; <strong>Order Chat (FR7.0)</strong></p>
+      <h3 style="margin-top:0;">Order Chat (FR7.0)</h3>
+      <h2>Order Chat (FR7.0)</h2>
+      <p>
+        The Order Chat feature enables direct communication between the buyer and seller within an active reservation/order. Users can send messages to confirm availability, clarify pickup instructions, agree on meeting time, and resolve issues during coordination. The chat is linked to a specific order so conversations remain organized and relevant to the transaction.
+      </p>
+      <h2>Use Case Scenario</h2>
+      <p>
+        <strong>Actor(s):</strong> Buyer, Seller<br>
+        <strong>Goal:</strong> To exchange messages about an order so both parties can coordinate pickup details and complete the transaction smoothly.<br><br>
+        <strong>Preconditions:</strong>
+        <ol>
+          <li>The user is logged in</li>
+          <li>A reservation/order exists between the buyer and seller</li>
+          <li>The order is active (e.g., Pending, Accepted, or Ready for Pickup)</li>
+        </ol>
+        <strong>Main Scenario:</strong><br>
+        <ol>
+          <li>The user opens the Orders/Reservations section and selects an order</li>
+          <li>The system displays the order details and provides access to <strong>Order Chat</strong></li>
+          <li>The user opens the chat thread associated with the order</li>
+          <li>The system displays the conversation history between the buyer and seller</li>
+          <li>The user types a message and selects <strong>Send</strong></li>
+          <li>The system delivers the message and updates the chat thread in real time (or on refresh)</li>
+          <li>The receiving user views the message and replies as needed</li>
+          <li>Both parties continue messaging until pickup coordination is finalized</li>
+        </ol>
+        <strong>Alternative / Exception Flow:</strong><br>
+        - A1) Message failed to send (network/server issue): The system shows an error and allows the user to retry sending.<br>
+        - A2) Order is cancelled/closed: The system disables the chat input and shows that messaging is no longer available for the order.<br><br>
+        <strong>Outcome:</strong> <strong>Success:</strong> Messages are exchanged successfully and the buyer and seller are able to coordinate the order pickup.
+      </p>
     </td>
   </tr>
   <tr>

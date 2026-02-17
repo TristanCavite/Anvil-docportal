@@ -75,11 +75,39 @@
     </td>
     <!-- RIGHT: KEEP YOUR REVISIONS OR OTHER CONTENT -->
     <td valign="top" style="width: 72%; padding: 10px;">
-      <p><a href="../homepage/project-homepage.md">Homepage</a> &gt; <strong>Notification & Alerts</strong></p>
-      <h3 style="margin-top:0;">Notification</h3>
+      <p><a href="../homepage/project-homepage.md">Homepage</a> &gt; <strong>Notifications &amp; Alerts (FR10.0)</strong></p>
+      <h3 style="margin-top:0;">Notifications &amp; Alerts (FR10.0)</h3>
+      <h2>Notifications &amp; Alerts (FR10.0)</h2>
+      <p>
+        The Notifications &amp; Alerts feature informs users about important platform updates and actions that require attention. The system sends in-app notifications (and email alerts when applicable) for events such as reservation requests, reservation decisions (accepted/declined), order status updates, report outcomes, and account-related updates. This helps users respond on time and stay updated without repeatedly checking the platform.
+      </p>
+      <h2>Use Case Scenario</h2>
+      <p>
+        <strong>Actor(s):</strong> Buyer, Seller, Administrator<br>
+        <strong>Goal:</strong> To deliver timely notifications to users so they are aware of important actions and status updates within the platform.<br><br>
+        <strong>Preconditions:</strong>
+        <ol>
+          <li>The user is logged in (for in-app notifications)</li>
+          <li>A triggering event occurs (e.g., reservation request, order status change, report action)</li>
+          <li>The user has notification access enabled (and a valid email if email alerts are used)</li>
+        </ol>
+        <strong>Main Scenario:</strong><br>
+        <ol>
+          <li>A system event triggers a notification (e.g., new reservation request, reservation accepted/declined, order status updated)</li>
+          <li>The system creates a notification record and assigns it to the target user(s)</li>
+          <li>The system displays the notification in the user’s Notifications panel (with unread status)</li>
+          <li>If configured, the system sends an email alert containing a brief summary and link to the related page</li>
+          <li>The user opens the Notifications panel and selects a notification to view details</li>
+          <li>The system redirects the user to the related page (order, listing, report, or account page)</li>
+          <li>The system marks the notification as read after it is opened</li>
+        </ol>
+        <strong>Alternative / Exception Flow:</strong><br>
+        - A1) Email delivery failed (invalid email/server issue): The system logs the failure and continues to provide the in-app notification.<br>
+        - A2) User is offline: The notification remains queued/unread and is shown once the user logs in.<br><br>
+        <strong>Outcome:</strong> <strong>Success:</strong> The user receives the notification and can access the related information or action promptly.
+      </p>
     </td>
   </tr>
-
   <tr>
     <td colspan="2" align="center">© 2026 Anvil</td>
   </tr>

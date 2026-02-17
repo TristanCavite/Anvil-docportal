@@ -75,8 +75,38 @@
     </td>
     <!-- Right SideBar - Content -->
     <td valign="top" style="width: 72%; padding: 10px;">
-      <h3 style="margin-top:0;">Verify Seller</h3>
-      <br>
+      <p><a href="../homepage/project-homepage.md">Homepage</a> &gt; <strong>Verify Seller Accounts (FR8.0)</strong></p>
+      <h3 style="margin-top:0;">Verify Seller Accounts (FR8.0)</h3>
+      <h2>Verify Seller Accounts (FR8.0)</h2>
+      <p>
+        The Verify Seller Accounts feature allows administrators to review seller verification requests and confirm whether a seller is legitimate before allowing full platform privileges. The admin checks submitted details (e.g., identity information and supporting documents), then approves or rejects the request. This helps prevent fraud, improves buyer trust, and ensures that listings come from verified sellers.
+      </p>
+      <h2>Use Case Scenario</h2>
+      <p>
+        <strong>Actor(s):</strong> Administrator, Seller<br>
+        <strong>Goal:</strong> To verify seller accounts so only legitimate sellers can post listings and transact on the platform with buyer trust.<br><br>
+        <strong>Preconditions:</strong>
+        <ol>
+          <li>The administrator is logged in</li>
+          <li>The seller has submitted a verification request with required details/documents</li>
+          <li>The administrator has permission to approve or reject verification requests</li>
+        </ol>
+        <strong>Main Scenario:</strong><br>
+        <ol>
+          <li>The administrator navigates to the <strong>Verify Seller</strong> section from the admin menu</li>
+          <li>The system displays a list of pending verification requests with seller details and status</li>
+          <li>The administrator selects a request to review</li>
+          <li>The system displays the seller’s submitted information and supporting documents</li>
+          <li>The administrator verifies the details and assesses if requirements are satisfied</li>
+          <li>The administrator selects <strong>Approve</strong> or <strong>Reject</strong> and provides a reason if needed</li>
+          <li>The system updates the seller’s verification status and records the action in the activity log</li>
+          <li>The system notifies the seller of the verification result</li>
+        </ol>
+        <strong>Alternative / Exception Flow:</strong><br>
+        - A1) Missing/unclear documents: The administrator rejects the request and the system prompts the seller to resubmit with complete requirements.<br>
+        - A2) Update failed (network/server issue): The system shows an error message and allows the administrator to retry.<br><br>
+        <strong>Outcome:</strong> <strong>Success:</strong> The seller is verified (or rejected), the status is updated in the system, and the seller is notified of the result.
+      </p>
     </td>
   </tr>
   <tr>

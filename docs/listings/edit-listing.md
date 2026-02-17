@@ -76,8 +76,37 @@
     <!-- Right SideBar - Content -->
     <td valign="top" style="width: 72%; padding: 10px;">
       <p><a href="../homepage/project-homepage.md">Homepage</a> &gt; <strong>Edit Listing (FR3.0)</strong></p>
-      <h3 style="margin-top:0;">Edit Listing</h3>
-      <br>
+      <h3 style="margin-top:0;">Edit Listing (FR3.0)</h3>
+      <h2>Edit Listing (FR3.0)</h2>
+      <p>
+        The Edit Listing feature allows sellers to update an existing food listing to keep information accurate and current. Sellers can revise details such as item name, description, category, quantity, pickup schedule/location, and photos. The system validates changes and saves the updated listing so buyers always see the latest availability and pickup details.
+      </p>
+      <h2>Use Case Scenario</h2>
+      <p>
+        <strong>Actor(s):</strong> Seller<br>
+        <strong>Goal:</strong> To update listing details so the information shown to buyers remains accurate and reflects current availability and pickup arrangements.<br><br>
+        <strong>Preconditions:</strong>
+        <ol>
+          <li>The seller is logged in</li>
+          <li>The listing exists and belongs to the seller</li>
+          <li>The listing is not archived or expired</li>
+        </ol>
+        <strong>Main Scenario:</strong><br>
+        <ol>
+          <li>The seller opens the Listings page and selects a listing to manage</li>
+          <li>The system displays the listing details page with an <strong>Edit</strong> option</li>
+          <li>The seller clicks <strong>Edit Listing</strong></li>
+          <li>The system displays editable fields (e.g., title, description, quantity, pickup details, and images)</li>
+          <li>The seller updates one or more fields</li>
+          <li>The seller clicks <strong>Save</strong></li>
+          <li>The system validates the input and updates the listing record</li>
+          <li>The system shows a confirmation message and displays the updated listing</li>
+        </ol>
+        <strong>Alternative / Exception Flow:</strong><br>
+        - A1) Invalid input (e.g., missing required field): The system highlights the field and blocks saving until corrected.<br>
+        - A2) Update failed (network/server issue): The system shows an error message and keeps the seller on the edit page to retry.<br><br>
+        <strong>Outcome:</strong> <strong>Success:</strong> The listing is updated successfully and the latest details are visible to buyers.
+      </p>
     </td>
   </tr>
   <tr>

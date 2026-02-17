@@ -77,11 +77,9 @@
     <td valign="top" style="width: 72%; padding: 10px;">
       <p><a href="../homepage/project-homepage.md">Homepage</a> &gt; <strong>Review Reports</strong></p>
       <img src="../../assets/img/review-reports.png" alt="Review Report Page" style="width:70%; aspect-ratio:16/9; object-fit:contain; background:#fff; border-radius:10px;" >
-       <h2>Review Reports (FR8.0)</h2>
+      <h2>Review Reports (FR9.0)</h2>
       <p>
-      The Review Report feature serves as a comprehensive administrative tool that empowers platform administrators to thoroughly examine, assess, and verify user-submitted reports with precision and efficiency. This critical functionality enables admins to systematically investigate flagged content, user behavior, and potential policy violations, allowing them to make informed decisions that help maintain the platform's integrity and ensure the application runs smoothly without causing unnecessary disruptions or disturbances to the broader user community. 
-      </p>
-      By providing administrators with detailed insights into reported issues, including context, timestamps, and relevant user interactions, this feature facilitates swift and appropriate action against violations while protecting innocent users from false accusations. This feature is absolutely essential for maintaining robust community standards, fostering a positive user experience, and ensuring a safe, trustworthy, and welcoming platform where all users can interact with confidence. The streamlined review process not only reduces response times but also ensures consistency in enforcement across the platform, acting as the backbone of content moderation that helps create an environment where quality interactions flourish and problematic behavior is promptly addressed, ultimately contributing to the long-term success and sustainability of the platform.
+        The Review Reports feature allows administrators to examine user-submitted reports and verify whether a listing or user violated platform policies. It displays key report details (reason, reported entity, context, and status) so admins can make consistent decisions. After reviewing, the admin can dismiss invalid reports or proceed to Apply Sanction for valid violations to maintain a safe and trustworthy community.
       </p>
       <h2>Use Case Scenario</h2>
       <p>

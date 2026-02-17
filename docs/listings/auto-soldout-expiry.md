@@ -75,11 +75,38 @@
     </td>
     <!-- RIGHT: KEEP YOUR REVISIONS OR OTHER CONTENT -->
     <td valign="top" style="width: 72%; padding: 10px;">
-      <p><a href="../homepage/project-homepage.md">Homepage</a> &gt; <strong>Auto Soldout Expiry Handling</strong></p>
-      <h3 style="margin-top:0;">Auto Soldout Expiry Handling</h3>
+      <p><a href="../homepage/project-homepage.md">Homepage</a> &gt; <strong>Auto Sold-out / Expiry Handling (FR4.0)</strong></p>
+      <h3 style="margin-top:0;">Auto Sold-out / Expiry Handling (FR4.0)</h3>
+      <h2>Auto Sold-out / Expiry Handling (FR4.0)</h2>
+      <p>
+        The Auto Sold-out / Expiry Handling feature automatically updates a listing’s availability to prevent buyers from reserving items that are no longer valid. When a listing reaches zero remaining quantity, the system marks it as <strong>Sold Out</strong>. When the pickup deadline or expiry time is reached, the system marks the listing as <strong>Expired</strong> and removes it from active browsing and reservation flows.
+      </p>
+      <h2>Use Case Scenario</h2>
+      <p>
+        <strong>Actor(s):</strong> System, Seller, Buyer<br>
+        <strong>Goal:</strong> To automatically update listing status (Sold Out/Expired) so only available and valid listings are shown and reservable.<br><br>
+        <strong>Preconditions:</strong>
+        <ol>
+          <li>A listing exists with defined quantity and/or expiry/pickup deadline</li>
+          <li>The listing is currently active (not archived)</li>
+          <li>The system is able to evaluate listing quantity and time conditions</li>
+        </ol>
+        <strong>Main Scenario:</strong><br>
+        <ol>
+          <li>The system monitors active listings for quantity changes and expiry deadlines</li>
+          <li>When reservations reduce the remaining quantity to zero, the system updates the listing status to <strong>Sold Out</strong></li>
+          <li>When the expiry time or pickup deadline is reached, the system updates the listing status to <strong>Expired</strong></li>
+          <li>The system hides sold-out/expired listings from Browse and Search results</li>
+          <li>The system blocks new reservation attempts for sold-out/expired listings and shows an appropriate message</li>
+          <li>If configured, the system notifies the seller (and affected buyers) about the status change</li>
+        </ol>
+        <strong>Alternative / Exception Flow:</strong><br>
+        - A1) Status update failed (network/server issue): The system logs the error and retries the update until successful.<br>
+        - A2) Listing is manually archived before expiry: The system treats the listing as inactive and skips automated status changes.<br><br>
+        <strong>Outcome:</strong> <strong>Success:</strong> Listings are automatically marked sold out or expired, preventing invalid reservations and keeping browsing results accurate.
+      </p>
     </td>
   </tr>
-
   <tr>
     <td colspan="2" align="center">© 2026 Anvil</td>
   </tr>

@@ -75,9 +75,36 @@
     </td>
     <!-- Right SideBar - Content -->
     <td valign="top" style="width: 72%; padding: 10px;">
-      <p><a href="../homepage/project-homepage.md">Homepage</a> &gt; <strong>Pick-up Details</strong></p>
-      <h3 style="margin-top:0;">Pickup Details</h3>
-      <br>
+      <p><a href="../homepage/project-homepage.md">Homepage</a> &gt; <strong>Pickup Details (FR7.0)</strong></p>
+      <h3 style="margin-top:0;">Pickup Details (FR7.0)</h3>
+      <h2>Pickup Details (FR7.0)</h2>
+      <p>
+        The Pickup Details feature provides both buyers and sellers with the essential information needed to complete an item pickup smoothly. The system displays the agreed pickup location, schedule/time window, instructions, and contact details related to the reservation. This helps reduce missed pickups and ensures both parties have a clear reference for where and when the exchange will happen.
+      </p>
+      <h2>Use Case Scenario</h2>
+      <p>
+        <strong>Actor(s):</strong> Buyer, Seller<br>
+        <strong>Goal:</strong> To view the complete pickup information for a reservation so both parties can coordinate and complete the exchange successfully.<br><br>
+        <strong>Preconditions:</strong>
+        <ol>
+          <li>The user is logged in</li>
+          <li>A reservation/order exists between the buyer and seller</li>
+          <li>The reservation has been accepted (or is in a status where pickup details are available)</li>
+        </ol>
+        <strong>Main Scenario:</strong><br>
+        <ol>
+          <li>The user opens the Orders/Reservations section and selects an order</li>
+          <li>The system displays the order summary and current status</li>
+          <li>The user selects <strong>Pickup Details</strong> (or scrolls to the pickup section)</li>
+          <li>The system displays pickup information (location, schedule/time window, and instructions)</li>
+          <li>The user reviews the details to confirm where and when to meet</li>
+          <li>If clarifications are needed, the user proceeds to the <strong>Order Chat</strong> for coordination</li>
+        </ol>
+        <strong>Alternative / Exception Flow:</strong><br>
+        - A1) Pickup details not set/incomplete: The system shows a notice and prompts the seller to provide the required pickup information.<br>
+        - A2) Order is cancelled/expired: The system restricts access and shows that pickup is no longer applicable.<br><br>
+        <strong>Outcome:</strong> <strong>Success:</strong> The user views the pickup details and can coordinate the exchange based on the information shown.
+      </p>
     </td>
   </tr>
   <tr>

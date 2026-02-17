@@ -75,8 +75,36 @@
     </td>
     <!-- RIGHT: KEEP YOUR REVISIONS OR OTHER CONTENT -->
     <td valign="top" style="width: 72%; padding: 10px;">
-      <p><a href="../homepage/project-homepage.md">Homepage</a> &gt; <strong>Browse Listing</strong></p>
-      <h3 style="margin-top:0;">Browse Listing</h3>
+      <p><a href="../homepage/project-homepage.md">Homepage</a> &gt; <strong>Browse Listings (FR5.0)</strong></p>
+      <h3 style="margin-top:0;">Browse Listings (FR5.0)</h3>
+      <h2>Browse Listings (FR5.0)</h2>
+      <p>
+        The Browse Listings feature allows buyers to view all available listings posted by sellers in one place. The system displays listing previews such as item name, image, category, quantity/availability, and pickup details so buyers can quickly explore options. Buyers can open a listing to view full details and proceed with reservation if eligible.
+      </p>
+      <h2>Use Case Scenario</h2>
+      <p>
+        <strong>Actor(s):</strong> Buyer<br>
+        <strong>Goal:</strong> To view and explore available listings so the buyer can choose an item and proceed to reservation or further actions.<br><br>
+        <strong>Preconditions:</strong>
+        <ol>
+          <li>The buyer has access to the Browse Listings page</li>
+          <li>There are active listings available in the system</li>
+          <li>The system is able to retrieve and display listing information</li>
+        </ol>
+        <strong>Main Scenario:</strong><br>
+        <ol>
+          <li>The buyer navigates to the Browse Listings page</li>
+          <li>The system displays a list/grid of active listings with basic details (title, image, category, and availability)</li>
+          <li>The buyer scrolls through listings to explore available items</li>
+          <li>The buyer selects a listing to view its full details</li>
+          <li>The system opens the listing detail view showing complete item and pickup information</li>
+          <li>The buyer decides to reserve the item or returns to browsing</li>
+        </ol>
+        <strong>Alternative / Exception Flow:</strong><br>
+        - A1) No active listings available: The system shows a message indicating there are no listings to display.<br>
+        - A2) Listings failed to load (network/server issue): The system shows an error message and allows the buyer to retry.<br><br>
+        <strong>Outcome:</strong> <strong>Success:</strong> The buyer successfully browses listings and views item details for potential reservation.
+      </p>
     </td>
   </tr>
 

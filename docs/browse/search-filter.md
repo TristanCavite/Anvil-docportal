@@ -73,11 +73,40 @@
         <li><a href="../audit/view-audit-logs.md">View Activity Logs (FR11.0)</a></li>
       </ul>
     </td>
-    <!-- RIGHT: KEEP YOUR REVISIONS OR OTHER CONTENT -->
-    <td valign="top" style="width: 72%; padding: 10px;">
-      <p><a href="../homepage/project-homepage.md">Homepage</a> &gt; <strong>Search Filters</strong></p>
-      <h3 style="margin-top:0;">Search Filters</h3>
-    </td>
+   <!-- RIGHT: KEEP YOUR REVISIONS OR OTHER CONTENT -->
+  <td valign="top" style="width: 72%; padding: 10px;">
+    <p><a href="../homepage/project-homepage.md">Homepage</a> &gt; <strong>Search &amp; Filters (FR5.0)</strong></p>
+    <h3 style="margin-top:0;">Search &amp; Filters (FR5.0)</h3>
+    <h2>Search &amp; Filters (FR5.0)</h2>
+    <p>
+      The Search &amp; Filters feature helps buyers quickly find relevant listings by allowing them to search by keywords and refine results using filter options. Users can narrow listings based on category, location, availability status, pickup schedule/time, and other listing attributes supported by the platform. This improves browsing efficiency and helps buyers discover listings that match their needs.
+    </p>
+    <h2>Use Case Scenario</h2>
+    <p>
+      <strong>Actor(s):</strong> Buyer<br>
+      <strong>Goal:</strong> To search and filter listings so the buyer can quickly find items that match their preferences and pickup constraints.<br><br>
+      <strong>Preconditions:</strong>
+      <ol>
+        <li>The buyer is on the Browse Listings page</li>
+        <li>There are active listings available in the system</li>
+        <li>The platform has search and filter options enabled</li>
+      </ol>
+      <strong>Main Scenario:</strong><br>
+      <ol>
+        <li>The buyer navigates to the Browse Listings page</li>
+        <li>The system displays the search bar and available filter controls</li>
+        <li>The buyer enters a keyword in the search bar (e.g., item name or category)</li>
+        <li>The buyer selects one or more filters (e.g., category, location, pickup schedule, availability)</li>
+        <li>The system applies the search and filters and refreshes the listing results</li>
+        <li>The buyer reviews the filtered results and selects a listing to view details</li>
+        <li>The buyer adjusts filters as needed to refine results further</li>
+      </ol>
+      <strong>Alternative / Exception Flow:</strong><br>
+      - A1) No results found: The system shows a “No listings found” message and suggests clearing or adjusting filters.<br>
+      - A2) Search failed (network/server issue): The system shows an error message and allows the buyer to retry.<br><br>
+      <strong>Outcome:</strong> <strong>Success:</strong> The buyer successfully narrows listings and finds an item that matches their needs.
+    </p>
+  </td>
   </tr>
 
   <tr>

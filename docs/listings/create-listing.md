@@ -76,8 +76,37 @@
     <!-- Right SideBar - Content -->
     <td valign="top" style="width: 72%; padding: 10px;">
       <p><a href="../homepage/project-homepage.md">Homepage</a> &gt; <strong>Create Listing (FR3.0)</strong></p>
-      <h3 style="margin-top:0;">Create Listing</h3>
-      <br>
+      <h3 style="margin-top:0;">Create Listing (FR3.0)</h3>
+      <h2>Create Listing (FR3.0)</h2>
+      <p>
+        The Create Listing feature allows sellers to post a new food listing on the platform for buyers to browse and reserve. The seller provides item details such as name, description, category, quantity, pickup location/schedule, and photos. The system validates the information and publishes the listing so it becomes visible and available for reservations.
+      </p>
+      <h2>Use Case Scenario</h2>
+      <p>
+        <strong>Actor(s):</strong> Seller<br>
+        <strong>Goal:</strong> To create and publish a new listing so buyers can view it and submit reservation requests.<br><br>
+        <strong>Preconditions:</strong>
+        <ol>
+          <li>The seller is logged in</li>
+          <li>The seller account is allowed to create listings (e.g., verified if required by the platform)</li>
+          <li>The seller has the listing details ready (item info, quantity, pickup details, and optional images)</li>
+        </ol>
+        <strong>Main Scenario:</strong><br>
+        <ol>
+          <li>The seller opens the Listings page and selects <strong>Create Listing</strong></li>
+          <li>The system displays the create listing form</li>
+          <li>The seller enters listing details (title, description, category, quantity, pickup location/schedule)</li>
+          <li>The seller uploads one or more photos (optional)</li>
+          <li>The seller clicks <strong>Publish</strong> or <strong>Submit</strong></li>
+          <li>The system validates the input and saves the listing</li>
+          <li>The system publishes the listing and makes it visible to buyers</li>
+          <li>The system shows a confirmation message and displays the newly created listing</li>
+        </ol>
+        <strong>Alternative / Exception Flow:</strong><br>
+        - A1) Invalid or missing required fields: The system highlights the fields and prevents publishing until corrected.<br>
+        - A2) Image upload failed: The system shows an error message and allows the seller to retry or publish without images.<br><br>
+        <strong>Outcome:</strong> <strong>Success:</strong> A new listing is created and published, and buyers can now browse and reserve it.
+      </p>
     </td>
   </tr>
   <tr>

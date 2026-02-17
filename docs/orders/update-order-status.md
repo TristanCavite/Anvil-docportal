@@ -75,9 +75,37 @@
     </td>
     <!-- Right SideBar - Content -->
     <td valign="top" style="width: 72%; padding: 10px;">
-      <p><a href="../homepage/project-homepage.md">Homepage</a> &gt; <strong>Update Order Status</strong></p>
-      <h3 style="margin-top:0;">Update Order Status</h3>
-      <br>
+      <p><a href="../homepage/project-homepage.md">Homepage</a> &gt; <strong>Update Order Status (FR6.0)</strong></p>
+      <h3 style="margin-top:0;">Update Order Status (FR6.0)</h3>
+      <h2>Update Order Status (FR6.0)</h2>
+      <p>
+        The Update Order Status feature allows the seller to track and manage the progress of a reservation from acceptance to completion. The system updates the order state (e.g., Accepted, Ready for Pickup, Completed, or Cancelled) and notifies the buyer so both parties stay aligned during pickup coordination. This ensures transparency and reduces missed pickups or misunderstandings.
+      </p>
+      <h2>Use Case Scenario</h2>
+      <p>
+        <strong>Actor(s):</strong> Seller, Buyer<br>
+        <strong>Goal:</strong> To update the reservation/order status so the buyer is informed and the system accurately reflects the current pickup progress.<br><br>
+        <strong>Preconditions:</strong>
+        <ol>
+          <li>The seller is logged in</li>
+          <li>The reservation/order exists and has been accepted</li>
+          <li>The seller has access to the order details page</li>
+        </ol>
+        <strong>Main Scenario:</strong><br>
+        <ol>
+          <li>The seller opens the Orders/Reservations section and selects an active order</li>
+          <li>The system displays the current order details and status</li>
+          <li>The seller selects <strong>Update Status</strong> or chooses a new status from the available options</li>
+          <li>The seller confirms the status change (e.g., <strong>Ready for Pickup</strong>, <strong>Completed</strong>)</li>
+          <li>The system validates the status transition and saves the update</li>
+          <li>The system notifies the buyer about the updated status</li>
+          <li>The updated status is displayed in both the buyer and seller order views</li>
+        </ol>
+        <strong>Alternative / Exception Flow:</strong><br>
+        - A1) Invalid status transition (e.g., skipping required steps): The system blocks the update and prompts the seller to choose an allowed status.<br>
+        - A2) Update failed (network/server issue): The system shows an error message and allows the seller to retry.<br><br>
+        <strong>Outcome:</strong> <strong>Success:</strong> The order status is updated, recorded in the system, and the buyer is notified of the change.
+      </p>
     </td>
   </tr>
   <tr>

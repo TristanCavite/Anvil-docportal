@@ -75,9 +75,37 @@
     </td>
     <!-- Right SideBar - Content -->
     <td valign="top" style="width: 72%; padding: 10px;">
-      <p><a href="../homepage/project-homepage.md">Homepage</a> &gt; <strong>Reserve Item</strong></p>
-      <h3 style="margin-top:0;">Reserve Item</h3>
-      <br>
+      <p><a href="../homepage/project-homepage.md">Homepage</a> &gt; <strong>Reserve Item (FR6.0)</strong></p>
+      <h3 style="margin-top:0;">Reserve Item (FR6.0)</h3>
+      <h2>Reserve Item (FR6.0)</h2>
+      <p>
+        The Reserve Item feature allows a buyer to request a specific item listing from a seller before pickup. The system records the reservation request, marks it as pending, and notifies the seller so they can accept or decline. This helps prevent conflicts by ensuring items are coordinated and reserved before the buyer travels for pickup.
+      </p>
+      <h2>Use Case Scenario</h2>
+      <p>
+        <strong>Actor(s):</strong> Buyer, Seller<br>
+        <strong>Goal:</strong> To submit a reservation request for an item so the seller can confirm availability and the system can track the reservation status.<br><br>
+        <strong>Preconditions:</strong>
+        <ol>
+          <li>The buyer is logged in</li>
+          <li>The listing is available and not expired/archived</li>
+          <li>The buyer has selected an item listing to reserve</li>
+        </ol>
+        <strong>Main Scenario:</strong><br>
+        <ol>
+          <li>The buyer opens a listing and selects <strong>Reserve</strong></li>
+          <li>The system displays the reservation form (quantity and optional message/instructions)</li>
+          <li>The buyer enters the required details and submits the reservation request</li>
+          <li>The system validates the input and creates a reservation with status <strong>Pending</strong></li>
+          <li>The system notifies the seller about the new reservation request</li>
+          <li>The buyer can view the reservation status in their Orders/Reservations page</li>
+          <li>The seller reviews the request and proceeds to accept or decline the reservation</li>
+        </ol>
+        <strong>Alternative / Exception Flow:</strong><br>
+        - A1) Listing becomes unavailable (sold out/expired) before submission: The system blocks the reservation and informs the buyer the item is no longer available.<br>
+        - A2) Invalid input (e.g., missing/invalid quantity): The system highlights the field and prevents submission until corrected.<br><br>
+        <strong>Outcome:</strong> <strong>Success:</strong> A reservation request is submitted, recorded as pending, and the seller is notified for confirmation.
+      </p>
     </td>
   </tr>
   <tr>

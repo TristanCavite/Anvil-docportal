@@ -91,43 +91,22 @@
         and review seller-related information that helps identify them across listings and reservations.
       </p>
       <h2>Use Case Scenario</h2>
-      <table border="1" cellpadding="6" cellspacing="0" style="width:100%;max-width:100%;font-size:12px;table-layout:fixedborder-collapse:collapse;">
-        <tr>
-          <th style="width:22%; overflow-wrap:anywhere; word-break:break-word; white-space:normal;">Actor(s)</th>
-          <td style="overflow-wrap:anywhere; word-break:break-word; white-space:normal;">Buyer, Seller</td>
-        </tr>
-        <tr>
-          <th style="width:22%; overflow-wrap:anywhere; word-break:break-word; white-space:normal;">Goal</th>
-          <td style="overflow-wrap:anywhere; word-break:break-word; white-space:normal;">To view saved profile information for verification and coordination purposes.</td>
-        </tr>
-        <tr>
-          <th style="width:22%; overflow-wrap:anywhere; word-break:break-word; white-space:normal;">Preconditions</th>
-          <td style="overflow-wrap:anywhere; word-break:break-word; white-space:normal;">
-            1. The user is logged in.<br>
-            2. The user has an existing profile record stored in the system.
-          </td>
-        </tr>
-        <tr>
-          <th style="width:22%; overflow-wrap:anywhere; word-break:break-word; white-space:normal;">Main Scenario</th>
-          <td style="overflow-wrap:anywhere; word-break:break-word; white-space:normal;">
-            1. The user opens the navigation menu and selects <strong>Profile</strong>.<br>
-            2. The system displays the user’s profile information (name, contact details, and location).<br>
-            3. If the user is a seller, the system also displays seller-specific details.<br>
-            4. The user reviews the information.<br>
-            5. If changes are needed, the user selects <strong>Edit Profile</strong> to update details; otherwise, the user exits the page.
-          </td>
-        </tr>
-        <tr>
-          <th style="width:22%; overflow-wrap:anywhere; word-break:break-word; white-space:normal;">Alternative / Exception Flow</th>
-          <td style="overflow-wrap:anywhere; word-break:break-word; white-space:normal;">
-            A1. Profile record missing/incomplete: The system prompts the user to complete required profile fields before using protected actions.
-          </td>
-        </tr>
-        <tr>
-          <th style="width:22%; overflow-wrap:anywhere; word-break:break-word; white-space:normal;">Outcome</th>
-          <td style="overflow-wrap:anywhere; word-break:break-word; white-space:normal;"><strong>Success:</strong> The user successfully views their profile details and confirms the information shown.</td>
-        </tr>
-      </table>
+      <p>
+        <strong>Actor(s):</strong> Buyer, Seller<br>
+        <strong>Goal:</strong> To view saved profile information for verification and coordination purposes.<br><br>
+        <strong>Preconditions:</strong><br>
+        1) The user is logged in.<br>
+        2) The user has an existing profile record stored in the system.<br><br>
+        <strong>Main Scenario:</strong><br>
+        1) The user opens the navigation menu and selects <strong>Profile</strong>.<br>
+        2) The system displays the user’s profile information (name, contact details, and location).<br>
+        3) If the user is a seller, the system also displays seller-specific details.<br>
+        4) The user reviews the information.<br>
+        5) If changes are needed, the user selects <strong>Edit Profile</strong>; otherwise, the user exits the page.<br><br>
+        <strong>Alternative / Exception Flow:</strong><br>
+        A1) Profile record missing/incomplete: The system prompts the user to complete required profile fields before using protected actions.<br><br>
+        <strong>Outcome:</strong> <strong>Success:</strong> The user successfully views their profile details and confirms the information shown.
+      </p>
     </td>
   </tr>
 

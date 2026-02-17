@@ -21,14 +21,14 @@
       <!--Listing Creation & Management-->
       <p style="margin:10px 0 6px;"><strong>3. Listing Creation &amp; Management</strong></p>
       <ul style="margin-top:0;">
-        <li><strong>Create Listing (FR3.0)</strong></li>
-        <li><a href="edit-listing.md">Edit Listing (FR3.0)</a></li>
-        <li><a href="archive-listing.md">Archive Listing (FR3.0)</a></li>
+        <li><a href="../listings/create-listing.md">Create Listing (FR3.0)</a></li>
+        <li><a href="../listings/edit-listing.md">Edit Listing (FR3.0)</a></li>
+        <li><a href="../listings/archive-listing.md">Archive Listing (FR3.0)</a></li>
       </ul>
       <!--Auto Sold-out & Expiry Handling-->
       <p style="margin:10px 0 6px;"><strong>4. Auto Sold-out &amp; Expiry Handling</strong></p>
       <ul style="margin-top:0;">
-        <li><a href="../listings/auto-soldout-expiry.md">Auto Sold-out / Expiry Handling (FR4.0)</a></li>
+        <li><strong>Auto Sold-out / Expiry Handling (FR4.0)</strong></li>
       </ul>
       <!--Buyer Browsing, Search, and Filters-->
       <p style="margin:10px 0 6px;"><strong>5. Buyer Browsing, Search, &amp; Filters</strong></p>
@@ -73,13 +73,13 @@
         <li><a href="../audit/view-audit-logs.md">View Activity Logs (FR11.0)</a></li>
       </ul>
     </td>
-    <!-- Right SideBar - Content -->
+    <!-- RIGHT: KEEP YOUR REVISIONS OR OTHER CONTENT -->
     <td valign="top" style="width: 72%; padding: 10px;">
-      <h3 style="margin-top:0;">Create Listing</h3>
-      <br>
+      <h3 style="margin-top:0;">Auto Soldout Expiry Handling</h3>
     </td>
   </tr>
+
   <tr>
-    <td colspan="2" align="center">© 2026 Restora</td>
+    <td colspan="2" align="center">© 2026 Anvil</td>
   </tr>
 </table>

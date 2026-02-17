@@ -1,7 +1,7 @@
 <h2>Anvil</h2>
 <p><strong>Target:</strong> <code>AV.010.001</code></p>
 
-<table border="1" cellpadding="0" cellspacing="0" style="width: 90%; font-size: 12px;">
+<table border="1" cellpadding="0" cellspacing="0" style="width: 100%; font-size: 12px; table-layout:fixed;">
   <tr>
     <!-- LEFT: SITE MAP (BASED ON FR TABLE) -->
         <td valign="top" style="width: 28%; padding: 10px;">
@@ -75,7 +75,7 @@
         </td>
     <!-- Right Sidebar - Authentication Content -->
     <td valign="top" style="width: 72%; padding: 10px;">
-      <p><a href="../homepage/project-homepage.md">Homepage</a> &gt; <strong>Authentication</strong></p>
+      <p><a href="../homepage/project-homepage.md">Homepage</a> &gt; <strong>Authentication (FR1.0)</strong></p>
       <p><strong>Authentication Screen (Login / Sign up / Forgot Password)</strong></p>
       <img src="/assets/Login.png" alt="Authentication Screen (mockup)" style="max-width:100%; border:1px solid #000;">
       <h2>Authentication &amp; Access Control (FR0.0)</h2>

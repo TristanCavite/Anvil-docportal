@@ -1,7 +1,7 @@
 <h2>Anvil</h2>
 <p><strong>Target:</strong> <code>AB.010.001</code></p>
 
-<table border="1" cellpadding="0" cellspacing="0" style="width: 90%; font-size: 12px;">
+<table border="1" cellpadding="0" cellspacing="0" style="width: 100%; font-size: 12px; table-layout:fixed;">
   <tr>
     <!-- LEFT: SITE MAP (BASED ON FR TABLE) -->
     <td valign="top" style="width: 28%; padding: 10px;">
@@ -75,6 +75,7 @@
     </td>
     <!-- Right Sidebar - Event and Scenario-->
     <td valign="top" style="width: 72%; padding: 10px;">
+      <p><strong>Homepage</strong></p>
       <p><strong>Homepage (unauthorized)</strong></p>
       <img src="/assets/Unauthorized.png" alt="Homepage Unauthorized" style="max-width:100%; border:1px solid #000;">
       <p><strong>Homepage (authorized)</strong></p>

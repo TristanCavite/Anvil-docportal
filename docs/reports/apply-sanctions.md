@@ -75,7 +75,7 @@
     </td>
     <!-- Right SideBar - Content -->
     <td valign="top" style="width: 72%; padding: 10px;">
-      <p><a href="../homepage/project-homepage.md">Homepage</a> &gt; <strong>Apply Sanctions</strong></p>
+      <p><a href="../homepage/project-homepage.md">Homepage</a> &gt; <strong>Warn/Suspend/Ban</strong></p>
       <img src="../../assets/img/apply-sanction.png" alt="Review Report Page" style="max-width:100%; border:1px solid #000;">
       <h2>Apply Sanctions (FR8.0)</h2>
       <p>

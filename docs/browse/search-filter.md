@@ -1,7 +1,7 @@
 <h2>Anvil</h2>
 <p><strong>Target:</strong> <code>AV.010.001</code></p>
 
-<table border="1" cellpadding="0" cellspacing="0" style="width: 90%; font-size: 12px;">
+<table border="1" cellpadding="0" cellspacing="0" style="width: 100%; font-size: 12px; table-layout:fixed;">
   <tr>
     <!-- LEFT: SITE MAP (BASED ON FR TABLE) -->
     <td valign="top" style="width: 28%; padding: 10px;">
@@ -75,7 +75,8 @@
     </td>
     <!-- RIGHT: KEEP YOUR REVISIONS OR OTHER CONTENT -->
     <td valign="top" style="width: 72%; padding: 10px;">
-      <h3 style="margin-top:0;">Search</h3>
+      <p><a href="../homepage/project-homepage.md">Homepage</a> &gt; <strong>Search Filters</strong></p>
+      <h3 style="margin-top:0;">Search Filters</h3>
     </td>
   </tr>
 

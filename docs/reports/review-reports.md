@@ -84,23 +84,28 @@
       <h2>Use Case Scenario</h2>
       <p>
         <strong>Actor(s):</strong> Administrator<br>
-        <strong>Goal:</strong> It enable administrators to efficiently verify user reports, maintain community standards, and ensure a safe, trustworthy platform by promptly addressing violations and minimizing user disruptions.<br><br>
+        <strong>Goal:</strong> To review and validate user-submitted reports so the administrator can take appropriate action and maintain community standards.<br><br>
         <strong>Preconditions:</strong>
         <ol>
           <li>The administrator is logged in</li>
-          <li>The administrator has internet connection</li>
+          <li>The system has at least one submitted report (pending/under review)</li>
         </ol>
         <strong>Main Scenario:</strong><br>
         <ol>
-          <li>The administrator navigates to the <strong>Review Reports</strong> section from the navigation menu.</li>
-          <li>The system displays a list of pending reports, including details such as the reported content, user, reason for the report, and status.</li>
-          <li>The admin selects a report to review and examines the content, user behavior, and context.</li>
-          <li>The admin assesses whether the report violates community guidelines based on the platform's policies.</li>
-          <li>If the report is valid, the admin proceeds to the <strong>Apply Sanction</strong> feature to take action.</li>
-          <li>If the report is invalid or lacks sufficient evidence, the admin selects <strong>Dismiss</strong> and provides a reason.</li>
-          <li>The system updates the report status to "Resolved" and notifies the user who submitted the report.</li>
-          <li>The admin may continue reviewing additional reports or close the review session.</li>
+          <li>The administrator navigates to the <strong>Review Reports</strong> page from the admin menu</li>
+          <li>The system displays a list of reports with key details (reported listing/user, reason, date submitted, and status)</li>
+          <li>The administrator selects a report to open its full details</li>
+          <li>The system displays the report context, evidence (if any), and related user/listing information</li>
+          <li>The administrator evaluates whether the report violates platform policies</li>
+          <li>If the report is valid, the administrator proceeds to <strong>Apply Sanction</strong> to enforce a penalty</li>
+          <li>If the report is invalid or lacks evidence, the administrator selects <strong>Dismiss</strong> and provides a reason</li>
+          <li>The system updates the report status to <strong>Resolved</strong> and records the decision in the activity log</li>
+          <li>The system notifies the reporting user of the outcome</li>
         </ol>
+        <strong>Alternative / Exception Flow:</strong><br>
+        - A1) Report details cannot be loaded (network/server issue): The system shows an error and allows the administrator to retry.<br>
+        - A2) Report is already resolved by another admin: The system refreshes the status and prevents duplicate actions.<br><br>
+        <strong>Outcome:</strong> <strong>Success:</strong> The report is reviewed, a decision is recorded, and the reporting user is notified of the result.
       </p>
   </tr>
   <tr>

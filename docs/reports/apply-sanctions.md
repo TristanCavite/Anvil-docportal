@@ -86,24 +86,30 @@
       <h2>Use Case Scenario</h2>
       <p>
         <strong>Actor(s):</strong> Administrator<br>
-        <strong>Goal:</strong> To enable administrators to enforce community guidelines consistently and fairly by applying appropriate penalties to users who violate platform policies, ensuring a safe, trustworthy, and well-moderated environment for all users.<br><br>
+        <strong>Goal:</strong> To apply an appropriate sanction to a user who violated platform policies so enforcement is consistent and the community remains safe.<br><br>
         <strong>Preconditions:</strong>
         <ol>
           <li>The administrator is logged in</li>
-          <li>The administrator has internet connection</li>
+          <li>A report has been reviewed and confirmed as a valid policy violation</li>
         </ol>
         <strong>Main Scenario:</strong><br>
         <ol>
-          <li>The administrator reviews a report that has been flagged as a policy violation.</li>
-          <li>The admin assesses the severity of the violation and reviews the user's history of previous violations or warnings.</li>
-          <li>The admin selects the <strong>Apply Sanction</strong> option from the report details page.</li>
-          <li>The system displays a sanction form with available options (e.g., warning, content removal, temporary suspension, permanent ban).</li>
-          <li>The admin selects the appropriate sanction based on the violation severity and user history.</li>
-          <li>The admin provides a reason or description for the sanction and submits the action.</li>
-          <li>The system applies the sanction, logs the action in the audit trail, and notifies the affected user of the penalty and the reason.</li>
-          <li>The user receives the notification and has the option to appeal the sanction if they believe it was unjust.</li>
-          <li>The report status is updated to "Resolved" and the case is closed.</li>
+          <li>The administrator opens a report with a confirmed violation</li>
+          <li>The system displays the report details, evidence/context, and the reported user’s account information</li>
+          <li>The administrator reviews the severity of the violation and checks the user’s prior warnings or sanctions</li>
+          <li>The administrator selects <strong>Apply Sanction</strong></li>
+          <li>The system displays available sanction options (e.g., warning, content removal, temporary suspension, permanent ban)</li>
+          <li>The administrator selects the appropriate sanction and enters a reason/notes for the decision</li>
+          <li>The administrator submits the sanction action</li>
+          <li>The system applies the sanction, updates the user’s account status accordingly, and records the action in the activity log</li>
+          <li>The system notifies the affected user of the sanction and the reason</li>
+          <li>The system updates the related report status to <strong>Resolved</strong> and closes the case</li>
         </ol>
+        <strong>Alternative / Exception Flow:</strong><br>
+        - A1) User is already sanctioned for the same case: The system blocks duplicate action and shows the existing sanction details.<br>
+        - A2) Invalid sanction selection (not allowed for the violation level): The system prompts the administrator to select a permitted sanction.<br>
+        - A3) Action failed (network/server issue): The system shows an error message and allows the administrator to retry.<br><br>
+        <strong>Outcome:</strong> <strong>Success:</strong> The sanction is applied, the action is logged, the user is notified, and the case is marked resolved.
       </p>
     </td>
   </tr>

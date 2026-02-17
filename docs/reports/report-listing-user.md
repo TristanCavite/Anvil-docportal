@@ -86,23 +86,29 @@
       <h2>Use Case Scenario</h2>
       <p>
         <strong>Actor(s):</strong> Buyer, Seller<br>
-        <strong>Goal:</strong> To empower users to easily file reports about inappropriate content or behavior, while providing transparency and visibility into the status of their reports, thereby fostering a safe, trustworthy, and community-driven platform.<br><br>
+        <strong>Goal:</strong> To submit a report about a listing or user so administrators can review potential violations and the reporter can track the report status.<br><br>
         <strong>Preconditions:</strong>
         <ol>
           <li>The user is logged in</li>
-          <li>The user has internet connection</li>
+          <li>The user can access the listing or user profile to be reported</li>
         </ol>
         <strong>Main Scenario:</strong><br>
         <ol>
-          <li>The user navigates to the content or profile they wish to report.</li>
-          <li>The user selects the <strong>Report</strong> option, typically found in a menu or as a button on the content or user profile.</li>
-          <li>The system displays a report form where the user can select the reason for the report (e.g., hate speech, harassment, misinformation, spam).</li>
-          <li>The user provides additional details, such as a brief description of the issue, and submits the report.</li>
-          <li>The system confirms the report submission and displays a message indicating that the report has been sent to administrators for review.</li>
-          <li>The user can view the status of their report through the Report Listing Feature, which shows the current status (e.g., "Pending," "Under Review," "Resolved").</li>
-          <li>If the report is resolved, the user receives a notification or update about the outcome.</li>
-          <li>The user may choose to file additional reports if needed.</li>
+          <li>The user navigates to the listing or user profile they want to report</li>
+          <li>The user selects the <strong>Report</strong> option</li>
+          <li>The system displays a report form with available reasons and an optional description field</li>
+          <li>The user selects a report reason and enters supporting details (optional)</li>
+          <li>The user submits the report</li>
+          <li>The system validates the input and creates a report with status <strong>Pending</strong></li>
+          <li>The system confirms submission and notifies administrators that a new report is available for review</li>
+          <li>The user views the report status in the Report Listing page (e.g., Pending, Under Review, Resolved)</li>
+          <li>If the report is resolved, the system notifies the user of the outcome</li>
         </ol>
+        <strong>Alternative / Exception Flow:</strong><br>
+        - A1) Duplicate report for the same content/user: The system warns the user and prevents duplicate submission (or links to the existing report).<br>
+        - A2) Missing required fields (reason/details if required): The system highlights the field and blocks submission until corrected.<br>
+        - A3) Submission failed (network/server issue): The system shows an error message and allows the user to retry.<br><br>
+        <strong>Outcome:</strong> <strong>Success:</strong> A report is submitted successfully, tracked in the system, and visible to the user for status updates.
       </p>
     </td>
   </tr>

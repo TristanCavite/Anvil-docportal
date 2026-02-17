@@ -95,7 +95,7 @@
         <ol>
           <li>The seller opens the Listings page and selects <strong>Create Listing</strong></li>
           <li>The system displays the create listing form</li>
-          <li>The seller enters listing details (title, description, category, quantity, pickup location/schedule)</li>
+          <li>The seller enters listing details (name, description, quantity, price/free tag, pickup location, pickup time window, expiry/pickup deadline, delivery/pickup option).</li>
           <li>The seller uploads one or more photos (optional)</li>
           <li>The seller clicks <strong>Publish</strong> or <strong>Submit</strong></li>
           <li>The system validates the input and saves the listing</li>

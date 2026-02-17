@@ -77,9 +77,9 @@
     <td valign="top" style="width: 72%; padding: 10px; min-width: 0; overflow-wrap: anywhere; word-break: break-word;">
       <p><a href="/assets/Authorized.png">Homepage</a> &gt; <strong>View Profile (FR2.0)</strong></p>
       <p><strong>View Profile (Buyer)</strong></p>
-      <img src="../../assets/img/buyer-profile-view.png" alt="View Profile - Buyer (mockup)" style="width:50%; aspect-ratio:16/9; object-fit:contain; background:#fff; border-radius:10px;" >
+      <img src="../../assets/img/buyer-profile-view.png" alt="View Profile - Buyer (mockup)" style="width:70%; aspect-ratio:16/9; object-fit:contain; background:#fff; border-radius:10px;" >
       <p><strong>View Profile (Seller)</strong></p>
-      <img src="../../assets/img/seller-profile-view.png" alt="View Profile - Seller (mockup)" style="width:50%; aspect-ratio:16/9; object-fit:contain; background:#fff; border-radius:10px;" >
+      <img src="../../assets/img/seller-profile-view.png" alt="View Profile - Seller (mockup)" style="width:70%; aspect-ratio:16/9; object-fit:contain; background:#fff; border-radius:10px;" >
       <h2>View Profile (FR1.0)</h2>
       <p>
         The View Profile feature allows logged-in users to review their saved profile details such as name, contact information,
@@ -94,17 +94,21 @@
       <p>
         <strong>Actor(s):</strong> Buyer, Seller<br>
         <strong>Goal:</strong> To view saved profile information for verification and coordination purposes.<br><br>
-        <strong>Preconditions:</strong><br>
-        1) The user is logged in.<br>
-        2) The user has an existing profile record stored in the system.<br><br>
+        <strong>Preconditions:</strong>
+        <ol>
+          <li>The User is logged in
+          <li>The User has an existing profile record stored in the system</li>
+        </ol>
         <strong>Main Scenario:</strong><br>
-        1) The user opens the navigation menu and selects <strong>Profile</strong>.<br>
-        2) The system displays the user’s profile information (name, contact details, and location).<br>
-        3) If the user is a seller, the system also displays seller-specific details.<br>
-        4) The user reviews the information.<br>
-        5) If changes are needed, the user selects <strong>Edit Profile</strong>; otherwise, the user exits the page.<br><br>
+        <ol>
+          <li>The User opens the navigation menu and selects <strong>Profile</strong>
+          <li>The System displays the user's profile information (name, contact details, and location).
+          <li>If the user is a seller, the system also displays seller-specific details.
+          <li>The user reviews the information.
+          <li>If changes are needed, the user selects <strong>Edit Profile</strong>; otherwise, the user exits the page.</li>
+        </ol>
         <strong>Alternative / Exception Flow:</strong><br>
-        A1) Profile record missing/incomplete: The system prompts the user to complete required profile fields before using protected actions.<br><br>
+        - A1) Profile record missing/incomplete: The system prompts the user to complete required profile fields before using protected actions.<br><br>
         <strong>Outcome:</strong> <strong>Success:</strong> The user successfully views their profile details and confirms the information shown.
       </p>
     </td>

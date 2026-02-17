@@ -33,7 +33,7 @@
       <!--Buyer Browsing, Search, and Filters-->
       <p style="margin:10px 0 6px;"><strong>5. Buyer Browsing, Search, &amp; Filters</strong></p>
       <ul style="margin-top:0;">
-        <li><a href="../browse/browse-listings.md">Browse Listings (FR5.0)</a></li>
+        <li><strong>Browse Listings (FR5.0)</strong></li>
         <li><a href="../browse/search-filter.md">Search &amp; Filters (FR5.0)</a></li>
       </ul>
       <!--Reservation & Order oordination-->

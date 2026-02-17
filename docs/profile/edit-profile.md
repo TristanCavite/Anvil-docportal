@@ -77,9 +77,9 @@
     <td valign="top" style="width: 72%; padding: 10px;">
       <p><a href="../homepage/project-homepage.md">Homepage</a> &gt;<strong>Edit Profile (FR2.0)</strong></p>
       <p><strong>Edit Profile (Buyer)</strong></p>
-      <img src="../../assets/img/buyer-profile-edit.png" alt="Edit Profile - Buyer (mockup)" style="max-width:100%; border:1px solid #000;">
+      <img src="../../assets/img/buyer-profile-edit.png" alt="Edit Profile - Buyer (mockup)" style="width:70%; aspect-ratio:16/9; object-fit:contain; background:#fff; border-radius:10px;" >
       <p><strong>Edit Profile (Seller)</strong></p>
-      <img src="../../assets/img/seller-profile-edit.png" alt="Edit Profile - Seller (mockup)" style="max-width:100%; border:1px solid #000;">
+      <img src="../../assets/img/seller-profile-edit.png" alt="Edit Profile - Seller (mockup)" style="width:70%; aspect-ratio:16/9; object-fit:contain; background:#fff; border-radius:10px;" >
       <h2>Edit Profile (FR1.0)</h2>
       <p>
         The Edit Profile feature allows logged-in users to update profile information such as name, contact details, and location.
@@ -87,47 +87,29 @@
         maintaining seller-specific details so buyers can reliably identify who posted the listing and how to contact them.
       </p>
       <h2>Use Case Scenario</h2>
-      <table border="1" cellpadding="6" cellspacing="0" style="width:100%; font-size:12px;">
-        <tr>
-          <th style="width: 22%;">Actor(s)</th>
-          <td>Buyer, Seller</td>
-        </tr>
-        <tr>
-          <th>Goal</th>
-          <td>To update profile information so account details remain accurate for communication and pickup coordination.</td>
-        </tr>
-        <tr>
-          <th>Preconditions</th>
-          <td>
-            1. The user is logged in.<br>
-            2. The user has an existing profile record in the system.
-          </td>
-        </tr>
-        <tr>
-          <th>Main Scenario</th>
-          <td>
-            1. The user opens the navigation menu and selects <strong>Profile</strong>.<br>
-            2. The system displays the user profile page.<br>
-            3. The user clicks <strong>Edit Profile</strong>.<br>
-            4. The system displays editable fields (name, contact, location, and seller-specific fields if the user is a seller).<br>
-            5. The user updates one or more fields.<br>
-            6. The user clicks <strong>Save</strong>.<br>
-            7. The system validates the input and updates the profile record.<br>
-            8. The system displays a confirmation message and shows the updated profile information.
-          </td>
-        </tr>
-        <tr>
-          <th>Alternative / Exception Flow</th>
-          <td>
-            A1. Invalid input (e.g., empty required field): The system highlights the field and blocks saving until corrected.<br>
-            A2. Save failed (network/server issue): The system shows an error message and keeps the user on the edit page to retry.
-          </td>
-        </tr>
-        <tr>
-          <th>Outcome</th>
-          <td><strong>Success:</strong> The user’s profile is saved and the updated details are reflected across the account.</td>
-        </tr>
-      </table>
+      <p>
+        <strong>Actor(s):</strong> Buyer, Seller<br>
+        <strong>Goal:</strong> To update profile information so account details remain accurate for communication and pickup coordination.<br><br>
+        <strong>Preconditions:</strong>
+        <ol>
+          <li>The user is logged in</li>
+          <li>The user has an existing profile record in the system</li>
+        </ol>
+        <strong>Main Scenario:</strong><br>
+        <ol>
+          <li>The user opens the navigation menu and selects <strong>Profile</strong>.</li>
+          <li>The system displays the user profile page.</li>
+          <li>The user clicks <strong>Edit Profile</strong>.</li>
+          <li>The system displays editable fields (name, contact, location, and seller-specific fields if the user is a seller).</li>
+          <li>The user updates one or more fields.</li>
+          <li>The user clicks <strong>Save</strong>.</li>
+          <li>The system validates the input and updates the profile record.</li>
+          <li>The system displays a confirmation message and shows the updated profile information.</li>
+        </ol>
+        <strong>Alternative / Exception Flow:</strong><br>
+        - A1) Invalid input (e.g., empty required field): The system highlights the field and blocks saving until corrected.<br>
+        - A2) Save failed (network/server issue): The system shows an error message and keeps the user on the edit page to retry.<br><br>
+        <strong>Outcome:</strong> <strong>Success:</strong> The user’s profile is saved and the updated details are reflected across the account.
     </td>
   </tr>
 

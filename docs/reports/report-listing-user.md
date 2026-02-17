@@ -1,7 +1,7 @@
 <h2>Anvil</h2>
 <p><strong>Target:</strong> <code>AV.010.001</code></p>
 
-<table border="1" cellpadding="0" cellspacing="0" style="width: 90%; font-size: 12px;">
+<table border="1" cellpadding="0" cellspacing="0" style="width: 100%; font-size: 12px; table-layout:fixed;">
   <tr>
     <!-- LEFT: SITE MAP (BASED ON FR TABLE) -->
     <td valign="top" style="width: 28%; padding: 10px;">
@@ -76,7 +76,7 @@
     <!-- Right SideBar - Content -->
     <td valign="top" style="width: 72%; padding: 10px;">
       <p><a href="../homepage/project-homepage.md">Homepage</a> &gt; <strong>Report Listing</strong></p>
-      <img src="../../assets/img/report-listing-user.png" alt="Report Listing Page" style="max-width:100%; border:1px solid #000;">
+      <img src="../../assets/img/report-listing-user.png" alt="Report Listing Page" style="max-width:70%; border:1px solid #000;">
       <h2>Reports Listing User (FR8.0)</h2>
       <p>
       The Report Listing Feature enables users to easily file reports about content or behavior that violates community guidelines, ensuring a safe and trustworthy platform for all. Users can access the reporting functionality through a simple interface, where they can select the type of issue (e.g., hate speech, spam, harassment, misinformation), provide a brief description, and submit the report. This feature empowers users to take an active role in maintaining community standards by flagging inappropriate content or behavior, contributing to a more respectful and secure environment. The process is designed to be intuitive and accessible, encouraging users to report issues promptly and confidently.
@@ -84,45 +84,26 @@
       Once a report is submitted, users can view the status of their report through the Report Listing Feature, which provides transparency and reassurance. The system displays the current status of each report—such as "Pending," "Under Review," or "Resolved"—along with any updates or actions taken by administrators. This visibility helps users feel heard and informed, fostering trust in the platform’s moderation process. By giving users control over reporting and keeping them updated, the feature strengthens community engagement and promotes a culture of shared responsibility in maintaining a safe and positive online experience.
       </p>
       <h2>Use Case Scenario</h2>
-      <table border="1" cellpadding="6" cellspacing="0" style="width:100%; font-size:12px;">
-        <tr>
-          <th style="width: 22%;">Actors(s)</th>
-          <td>
-            <ol style="padding-left: 0; margin-left: 10; list-style-type: decimal;">
-              <li>Buyer</li>
-              <li>Seller</li>
-            <ol>
-          </td>
-        </tr>
-        <tr>
-          <th>Goal</th>
-          <td>To empower users to easily file reports about inappropriate content or behavior, while providing transparency and visibility into the status of their reports, thereby fostering a safe, trustworthy, and community-driven platform.</td>
-        </tr>
-        <tr>
-          <th>Preconditions</th>
-          <td>
-            <ol  style="padding-left: 0; margin-left: 10; list-style-type: decimal;">
-              <li>The user is logged in</li>
-              <li>The user has internet connection</li>
-            </ol>
-          </td>
-        </tr>
-        <tr>
-          <th>Main Scenario</th>
-          <td>
-            <ol style="padding-left: 0; margin-left: 10; list-style-type: decimal;">
-              <li>The user navigates to the content or profile they wish to report.</li>
-              <li>The user selects the <strong>Report</strong> option, typically found in a menu or as a button on the content or user profile.</li>
-              <li> The system displays a report form where the user can select the reason for the report (e.g., hate speech, harassment, misinformation, spam).</li>
-              <li>The user provides additional details, such as a brief description of the issue, and submits the report.</li>
-              <li>The system confirms the report submission and displays a message indicating that the report has been sent to administrators for review.</li>
-              <li>The user can view the status of their report through the Report Listing Feature, which shows the current status (e.g., "Pending," "Under Review," "Resolved").</li>
-              <li>If the report is resolved, the user receives a notification or update about the outcome.</li>
-              <li>The user may choose to file additional reports if needed.</li>
-            </ol>
-          </td>
-        </tr>
-      </table>
+      <p>
+        <strong>Actor(s):</strong> Buyer, Seller<br>
+        <strong>Goal:</strong> To empower users to easily file reports about inappropriate content or behavior, while providing transparency and visibility into the status of their reports, thereby fostering a safe, trustworthy, and community-driven platform.<br><br>
+        <strong>Preconditions:</strong>
+        <ol>
+          <li>The user is logged in</li>
+          <li>The user has internet connection</li>
+        </ol>
+        <strong>Main Scenario:</strong><br>
+        <ol>
+          <li>The user navigates to the content or profile they wish to report.</li>
+          <li>The user selects the <strong>Report</strong> option, typically found in a menu or as a button on the content or user profile.</li>
+          <li>The system displays a report form where the user can select the reason for the report (e.g., hate speech, harassment, misinformation, spam).</li>
+          <li>The user provides additional details, such as a brief description of the issue, and submits the report.</li>
+          <li>The system confirms the report submission and displays a message indicating that the report has been sent to administrators for review.</li>
+          <li>The user can view the status of their report through the Report Listing Feature, which shows the current status (e.g., "Pending," "Under Review," "Resolved").</li>
+          <li>If the report is resolved, the user receives a notification or update about the outcome.</li>
+          <li>The user may choose to file additional reports if needed.</li>
+        </ol>
+      </p>
     </td>
   </tr>
   <tr>

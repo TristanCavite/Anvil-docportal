@@ -1,7 +1,7 @@
 <h2>Anvil</h2>
 <p><strong>Target:</strong> <code>AV.010.001</code></p>
 
-<table border="1" cellpadding="0" cellspacing="0" style="width: 90%; font-size: 12px;">
+<table border="1" cellpadding="0" cellspacing="0" style="width: 100%; font-size: 12px; table-layout:fixed;">
   <tr>
     <!-- LEFT: SITE MAP (BASED ON FR TABLE) -->
     <td valign="top" style="width: 28%; padding: 10px;">
@@ -76,7 +76,7 @@
     <!-- Right SideBar - Content -->
     <td valign="top" style="width: 72%; padding: 10px;">
       <p><a href="../homepage/project-homepage.md">Homepage</a> &gt; <strong>Review Reports</strong></p>
-      <img src="../../assets/img/review-reports.png" alt="Review Report Page" style="max-width:100%; border:1px solid #000;">
+      <img src="../../assets/img/review-reports.png" alt="Review Report Page" style="width:70%; aspect-ratio:16/9; object-fit:contain; background:#fff; border-radius:10px;" >
        <h2>Review Reports (FR8.0)</h2>
       <p>
       The Review Report feature serves as a comprehensive administrative tool that empowers platform administrators to thoroughly examine, assess, and verify user-submitted reports with precision and efficiency. This critical functionality enables admins to systematically investigate flagged content, user behavior, and potential policy violations, allowing them to make informed decisions that help maintain the platform's integrity and ensure the application runs smoothly without causing unnecessary disruptions or disturbances to the broader user community. 
@@ -84,44 +84,26 @@
       By providing administrators with detailed insights into reported issues, including context, timestamps, and relevant user interactions, this feature facilitates swift and appropriate action against violations while protecting innocent users from false accusations. This feature is absolutely essential for maintaining robust community standards, fostering a positive user experience, and ensuring a safe, trustworthy, and welcoming platform where all users can interact with confidence. The streamlined review process not only reduces response times but also ensures consistency in enforcement across the platform, acting as the backbone of content moderation that helps create an environment where quality interactions flourish and problematic behavior is promptly addressed, ultimately contributing to the long-term success and sustainability of the platform.
       </p>
       <h2>Use Case Scenario</h2>
-      <table border="1" cellpadding="6" cellspacing="0" style="width:100%; font-size:12px;">
-        <tr>
-          <th style="width: 22%;">Actors(s)</th>
-          <td>
-            <ol style="padding-left: 0; margin-left: 10; list-style-type: decimal;">
-              <li>Administrator</li>
-            <ol>
-          </td>
-        </tr>
-        <tr>
-          <th>Goal</th>
-          <td>It enable administrators to efficiently verify user reports, maintain community standards, and ensure a safe, trustworthy platform by promptly addressing violations and minimizing user disruptions.</td>
-        </tr>
-        <tr>
-          <th>Preconditions</th>
-          <td>
-            <ol  style="padding-left: 0; margin-left: 10; list-style-type: decimal;">
-              <li>The administrator is logged in</li>
-              <li>The administrator has internet connection</li>
-            </ol>
-          </td>
-        </tr>
-        <tr>
-          <th>Main Scenario</th>
-          <td>
-            <ol style="padding-left: 0; margin-left: 10; list-style-type: decimal;">
-              <li>The administrator navigates to the <strong>Review Reports</strong> section from the navigation menu.</li>
-              <li>The system displays a list of pending reports, including details such as the reported content, user, reason for the report, and status.</li>
-              <li>The admin selects a report to review and examines the content, user behavior, and context.<br></li>
-              <li>The admin assesses whether the report violates community guidelines based on the platform's policies.</li>
-              <li> If the report is valid, the admin proceeds to the <strong>Apply Sanction</strong> feature to take action.</li>
-              <li> If the report is invalid or lacks sufficient evidence, the admin selects <strong>Dismiss</strong> and provides a reason.</li>
-              <li> The system updates the report status to "Resolved" and notifies the user who submitted the report.</li>
-              <li>The admin may continue reviewing additional reports or close the review session.</li>
-            </ol>
-          </td>
-        </tr>
-      </table>
+      <p>
+        <strong>Actor(s):</strong> Administrator<br>
+        <strong>Goal:</strong> It enable administrators to efficiently verify user reports, maintain community standards, and ensure a safe, trustworthy platform by promptly addressing violations and minimizing user disruptions.<br><br>
+        <strong>Preconditions:</strong>
+        <ol>
+          <li>The administrator is logged in</li>
+          <li>The administrator has internet connection</li>
+        </ol>
+        <strong>Main Scenario:</strong><br>
+        <ol>
+          <li>The administrator navigates to the <strong>Review Reports</strong> section from the navigation menu.</li>
+          <li>The system displays a list of pending reports, including details such as the reported content, user, reason for the report, and status.</li>
+          <li>The admin selects a report to review and examines the content, user behavior, and context.</li>
+          <li>The admin assesses whether the report violates community guidelines based on the platform's policies.</li>
+          <li>If the report is valid, the admin proceeds to the <strong>Apply Sanction</strong> feature to take action.</li>
+          <li>If the report is invalid or lacks sufficient evidence, the admin selects <strong>Dismiss</strong> and provides a reason.</li>
+          <li>The system updates the report status to "Resolved" and notifies the user who submitted the report.</li>
+          <li>The admin may continue reviewing additional reports or close the review session.</li>
+        </ol>
+      </p>
   </tr>
   <tr>
     <td colspan="2" align="center">© 2026 Restora</td>
